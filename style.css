@@ -4,14 +4,13 @@
     font-family: cursive;
     box-sizing: border-box;
 }
-body{
-    background-color: rgb(162, 0, 255,5%);
-}
 .container{
+    background-color:rgb(10, 10, 10);
+    height: 100vh;
 }
-.container-header{
+.header{
     padding: 10px 5%;
-    background-color: #fff;
+    background-color:black;
 }
 nav{
     display: flex;
@@ -39,7 +38,7 @@ nav ul li{
     margin: 10px 30px;
 }
 nav ul li a{
-    color: black;
+    color: white;
     text-decoration: none;
     font-size: 18px;
     font-weight: bold;
@@ -48,7 +47,7 @@ nav ul li a{
 nav ul li a:hover{
     color:blueviolet;
 }
-.special{
+.btn-login{
     background-color: blueviolet;
     height: 46px;
     width: 81px;
@@ -63,43 +62,51 @@ nav ul li a:hover{
     background-color: rgb(128, 21, 228, 40%);
     color:black
 }
-.container-body{
-
+.content{
     width: 100%;
-    padding: 100px 0px;
+   
+
 }
-.body-main{
-    margin: 0px 200px;
-    width: auto;
-    height: auto;
+.content img{
+    height: 75vh;
+}
+.main{
+    width: 90%;
+    margin: 5% auto;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    ;
 }
-.body-text{
-    display: block;
-    margin: 50px 0px;
-}
-.body-image{
-    width: 730px;
-    border-radius: 30px;
-}
-.footer{
-    height: 50px;
-    width: 100%;
-    background-color: blueviolet;
     
+
+.main-text h4{
+    font-size: 25px;
+    color: rgb(158, 92, 175);
+    margin-bottom: 10px;
 }
-.more-button{
-    height: 46px;
-    width: 81px;
-    background-color: blueviolet;
+.main-text h1{
+    color: #fff;
+    font-size: 60px;
+    margin-bottom: 60px;
+}
+span{
+   color: blueviolet;
+}
+.main-text h3{
+    color: #fff;
+    font-size: 35px;
+}
+.more-btn{
+    height: 45px;
+    width: 85px;
     border-radius: 10px;
     color: #fff;
-    font-size: 18px;
+    background-color: blueviolet;
+    margin-top: 100px;
+    margin-left: 25%;
+    font-size: 20px;
     font-weight: bold;
     border: none;
-    transition: .3s;
 }
 .more-button:hover{
     background-color: rgb(128, 21, 228, 40%);
