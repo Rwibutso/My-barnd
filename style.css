@@ -2,15 +2,14 @@
     margin: 0;
     padding: 0;
     font-family: cursive;
-    box-sizing: border-box;
 }
 .container{
-    background-color:rgb(10, 10, 10);
+    background-color:rgb(8, 2, 2);
     height: 100vh;
 }
 .header{
-    padding: 10px 5%;
-    background-color:black;
+    padding: 10px 10%;
+    background-color:rgb(3, 3, 3);
 }
 nav{
     display: flex;
@@ -45,7 +44,7 @@ nav ul li a{
     transition: 0.3s;
 }
 nav ul li a:hover{
-    color:blueviolet;
+    color: blueviolet;
 }
 .btn-login{
     background-color: blueviolet;
@@ -58,9 +57,9 @@ nav ul li a:hover{
     border: none;
     transition: .3s;
 }
-.special:hover{
-    background-color: rgb(128, 21, 228, 40%);
-    color:black
+.btn-login:hover{
+    background-color: rgba(180, 68, 231, 0.4);
+    color:#fff
 }
 .content{
     width: 100%;
@@ -69,15 +68,18 @@ nav ul li a:hover{
 }
 .content img{
     height: 75vh;
+    border-radius: 50px;
 }
 .main{
     width: 90%;
-    margin: 5% auto;
+    margin: 5% 10%;
     display: flex;
     align-items: center;
-    ;
-}
     
+}
+.main-text{
+    margin-left: 10%;
+}
 
 .main-text h4{
     font-size: 25px;
@@ -107,8 +109,496 @@ span{
     font-size: 20px;
     font-weight: bold;
     border: none;
+    transition: .3s;
 }
-.more-button:hover{
-    background-color: rgb(128, 21, 228, 40%);
-    color:black
+.more-btn:hover{
+    background-color: rgba(180, 68, 231, 0.4);
+
+}
+
+.about{
+    width: 100%;
+}
+
+.about-main{
+    width: 90%;
+    width: 90%;
+    margin: 5% 10%;
+    display: flex;
+    align-items: center;
+}
+.about img{
+    height: 75vh;
+    border-radius: 50px;
+}
+.about-text{
+    margin-left: 10%;
+    width: 40%;
+    height: 65vh;
+}
+
+.about-text h2{
+    font-size: 65px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+.about-text h5{
+    color: #fff;
+    font-size: 50px;
+    margin-bottom: 60px;
+    
+}
+.about-text p{
+    font-size: 25px;
+    color: #fff;
+    margin-bottom: 10px;
+    letter-spacing: 3px;
+    
+}
+span{
+   color: blueviolet;
+}
+.main-text h3{
+    color: #fff;
+    font-size: 35px;
+}
+.media-container{
+    display: flex;
+    justify-content: center;
+    
+}
+.media-container img{
+    height: 50px;
+    margin:50px 10px;
+    padding: 10px;
+    transition: .3s;
+}
+.media-container img:hover{
+   height: 70px;
+}
+
+.skill{
+    width: 100%;
+}
+.skill-main{
+    width: 90%;
+    width: 90%;
+    margin: 5% 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.skill-bar{
+    background-color: rgba(149, 126, 172, 0.425);
+    height: 550px;
+    width: 30px;
+}
+.skill-text{
+    margin-left: 10%;
+    width: 50%;
+    height: 65vh;
+
+}
+.bar1{
+    background-color: rgba(71, 219, 12, 0.397);
+    height: 15px;
+    width: 380px;
+
+}
+.bar2{
+    background-color: rgba(167, 157, 157, 0.377);
+    height: 15px;
+    width: 350px;
+
+}
+.bar3{
+    background-color: rgba(199, 60, 60, 0.377);
+    height: 15px;
+    width: 300px;
+}
+.bar4{
+    background-color: rgba(25, 155, 36, 0.5);
+    height: 15px;
+    width: 270px;
+
+}
+.bar5{
+    background-color: rgba(196, 20, 173, 0.377);
+    height: 15px;
+    width: 310px;
+    margin-left: 20%;
+}
+.bar6{
+    background-color: rgba(63, 35, 187, 0.548);
+    height: 15px;
+    width: 390px;
+    margin-left: 20%;
+
+}
+.one{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.two{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.three{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.four{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.five{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.six{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.html{
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+.css{
+    font-size: 50px;
+    margin-bottom: 10px;
+    color: #fff;
+
+}
+.javascpt{
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: #fff;
+
+}
+.react{
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: #fff;
+
+}
+.node{
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: #fff;
+
+}
+.django{
+    font-size: 50px;
+    color: #fff;
+}
+.bar-cntainer{
+    height: 70%;
+    width: 100%;
+    margin: 12% 0px;
+}
+
+.contact-main{
+    width: 90%;
+    width: 90%;
+    margin: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact img{
+    height: 75vh;
+    border-radius: 50px 0px 0px 50px;
+    width: 60vh;
+}
+.contact-form{
+    background-color:#fff;
+    width: 30%;
+    height: 75vh;border-radius: 0px 50px 50px 0px;
+
+}
+.contact-form h2{
+    font-size: 75px;
+    padding: 50px;
+}
+.contact-form form{
+    box-sizing: border-box;
+    padding: 30px;
+}
+.contact-form .inputbox{
+   margin-top: 10px;
+}
+.contact-form .inputbox input,
+.contact-form .inputbox textarea{
+    width: 100%;
+    padding: 10px 0px;
+    font-size: 16px;
+    border: none;
+    margin: 10px 0px;
+    border-bottom: 2px solid blueviolet;
+    outline: none;
+
+}
+.contact-form .inputbox input[type="submit"]{
+    color: #fff;
+    background-color: blueviolet;
+    border-radius: 10px;
+    margin-top: 40px;
+}
+
+
+.mediacontact-container{
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    margin-left: 15px;
+    resize: none;
+    
+}
+.mediacontact-container img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    margin:0px 10px;
+    padding: 10px;
+    transition: .3s;
+}
+.mediacontact-container img:hover{
+   height: 70px;
+   width: 70px;
+}
+.login-main{
+    width: 90%;
+    width: 90%;
+    margin: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.login img{
+    height: 75vh;
+    border-radius: 50px 0px 0px 50px;
+    width: 60vh;
+}
+.login-form{
+    background-color:#fff;
+    width: 30%;
+    height: 75vh;border-radius: 0px 50px 50px 0px;
+
+}
+.login-form h2{
+    font-size: 75px;
+    padding: 20px 0px;
+    margin-top: 30%;
+}
+.login-form h5{
+    font-size: 25px;
+    margin-bottom: 30px ;
+    color: rgba(10, 6, 6, 0.548);
+    
+}
+.contact-form form{
+    box-sizing: border-box;
+    padding: 30px;
+}
+.login-form .inputbox{
+   margin-top: 10px;
+}
+.login-form .inputbox input,
+.login-form .inputbox textarea{
+    width: 90%;
+    padding: 10px 0px;
+    font-size: 16px;
+    border: none;
+    margin: 10px 0px;
+    border-bottom: 2px solid blueviolet;
+    outline: none;
+
+}
+.login-form .inputbox input[type="submit"]{
+    color: #fff;
+    background-color: blueviolet;
+    border-radius: 10px;
+    margin-top: 40px;
+}
+.passforgot{
+    font-size: 17px;
+    color: rgba(93, 18, 163, 0.432);
+    margin-left: 65%;
+    text-decoration: none;
+    
+}
+.passforgot:hover{
+    color: blueviolet;
+}
+.loginregister{
+    margin-top: 20px;
+    margin-left: 50%;
+    height: 50px;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+.link1{
+    color: blueviolet;
+    font-size: 20px;
+    font-weight: bold;
+    transition: .3s;
+    text-decoration: none;
+}
+.link2{
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    transition: .3s;
+    text-decoration: none;
+}
+.link2:hover{
+    color: blueviolet;
+}
+
+.register-main{
+    width: 90%;
+    width: 90%;
+    margin: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.register img{
+    height: 75vh;
+    border-radius: 50px 0px 0px 50px;
+    width: 60vh;
+}
+.register-form{
+    background-color:#fff;
+    width: 30%;
+    height: 75vh;border-radius: 0px 50px 50px 0px;
+
+}
+.register-form h2{
+    font-size: 75px;
+    padding: 10px 20px;
+    margin-top: 15%;
+}
+.register-form h5{
+    font-size: 20px;
+    margin-left: 30px;
+    color: rgba(10, 6, 6, 0.548);
+    
+}
+.register-form form{
+    box-sizing: border-box;
+    padding: 30px;
+}
+.register-form .inputbox{
+   margin-top: 10px;
+}
+.register-form .inputbox input,
+.register-form .inputbox textarea{
+    width: 90%;
+    padding: 10px 0px;
+    font-size: 16px;
+    border: none;
+    margin: 10px 0px;
+    border-bottom: 2px solid blueviolet;
+    outline: none;
+
+}
+.register-form .inputbox input[type="submit"]{
+    color: #fff;
+    background-color: blueviolet;
+    border-radius: 10px;
+    margin-top: 40px;
+}
+.bottomask{
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+}
+.work-main{
+    width: 90%;
+    margin: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.work1 img{
+    border-radius: 50px;
+    height: 55vh;
+    margin-left: 90px;
+}
+
+.work1 h2{
+    color: #fff;
+    font-size: 40px;
+    margin: 0px 100px;
+}
+.work1 h5{
+    color: rgba(173, 144, 187, 0.877);
+    font-size: 20px;
+    margin: 20px 100px;
+
+}
+.work1 button{
+    background-color: blueviolet;
+    height: 46px;
+    width: 81px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    transition: .3s;
+    margin: 20px 0px;
+
+}
+
+.btn-work1-div{
+    display: flex;
+    justify-content: center;
+}
+
+.work2 h2{
+    color: #fff;
+    font-size: 40px;
+    margin: 0px 100px;
+}
+.work2 h5{
+    color: rgba(173, 144, 187, 0.877);;
+    font-size: 20px;
+    margin: 20px 100px;
+
+}
+.work2 button{
+    background-color: blueviolet;
+    height: 46px;
+    width: 81px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    transition: .3s;
+    margin: 20px 0px;
+
+}
+
+.btn-work2-div{
+    display: flex;
+    justify-content: center;
+}
+.work2 img{
+    border-radius: 50px;
+    height: 55vh;
+    margin-left:20px;
 }
