@@ -4,18 +4,17 @@
     font-family: cursive;
 }
 .container{
-    background-color:black;
+    background-color:rgb(8, 8, 8);
     height: 100vh;
 }
+
 .header{
     padding: 10px 10%;
-    background-color:rgb(3, 3, 3);
 }
 nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
     
 }
 .div-logo{
@@ -62,11 +61,11 @@ nav ul li a:hover{
 }
 .btn-login:hover{
     background-color: rgba(180, 68, 231, 0.4);
-    color:#fff
+    color:#fff;
 }
 .content{
     width: 100%;
-   
+    height: 890px;  
 
 }
 .content img{
@@ -75,9 +74,11 @@ nav ul li a:hover{
 }
 .main{
     width: 90%;
-    margin: 5% 10%;
+    height: 100%;
+    margin-left: 100px;
     display: flex;
     align-items: center;
+    justify-content: center;
     
 }
 .main-text{
@@ -125,8 +126,8 @@ span{
 
 .about-main{
     width: 90%;
-    width: 90%;
-    margin: 5% 10%;
+    height: 890px;
+    margin: 0px 100px;
     display: flex;
     align-items: center;
 }
@@ -179,7 +180,7 @@ span{
     transition: .3s;
 }
 .media-container img:hover{
-   height: 70px;
+   transform: scale(1.3);
 }
 
 .skill{
@@ -187,8 +188,8 @@ span{
 }
 .skill-main{
     width: 90%;
-    width: 90%;
-    margin: 5% 10%;
+    height: 890px;
+    margin: 0px 100px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -312,8 +313,8 @@ span{
 
 .contact-main{
     width: 90%;
-    width: 90%;
-    margin: 5%;
+    height: 890px;
+    margin: 0px 100px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -442,13 +443,12 @@ span{
     transition: .3s;
 }
 .mediacontact-container img:hover{
-   height: 70px;
-   width: 70px;
+   transform: scale(1.3);
 }
 .login-main{
     width: 90%;
-    width: 90%;
-    margin: 5%;
+    height: 890px;
+    margin: 0px 100px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -550,8 +550,8 @@ span{
 
 .register-main{
     width: 90%;
-    width: 90%;
-    margin: 5%;
+    height: 890px;
+    margin: 0px 100px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -621,113 +621,230 @@ span{
     width: 70%;
     margin-left: 25px;
 }
-.work-main{
+
+.work-main1{
     width: 90%;
-    margin: 5%;
+    height: 90%;
+    margin-left: 100px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
+}
+.work1{
+    height: 90%;
+    width: 50%;
+    margin: 10px 0px;
+    
 }
 .work1 img{
     border-radius: 50px;
-    height: 55vh;
-    margin-left: 90px;
+    height: 70%;
+    width: 90%;
+    margin:0px 20px 60px 50px;
 }
 
 .work1 h2{
     color: #fff;
     font-size: 40px;
-    margin: 0px 100px;
+    margin-top: 60px;
+    margin-bottom: 80px;
+    margin-left: 40%;
 }
-.work1 h5{
-    color: rgba(173, 144, 187, 0.877);
-    font-size: 20px;
-    margin: 20px 100px;
-
+.work1-desc{
+    height: 90%;
+    width: 50%;
 }
-.work1 button{
-    background-color: blueviolet;
-    height: 46px;
-    width: 81px;
-    border-radius: 10px;
+.work1-desc h2{
+    font-style: italic;
+    color: rgb(125, 79, 184);
+    margin: 150px 0px 50px 100px;
+    font-size: 30px;
+}
+.work1-desc p{
+    font-style: italic;
     color: #fff;
-    font-size: 18px;
-    font-weight: bold;
-    border: none;
-    transition: .3s;
-    margin: 20px 0px;
-
+    margin-left: 100px;
+    width: 80%;
+    height: 35vh;
+    line-height: 40px;
+    font-size: 25px;
 }
+
 
 .btn-work1-div{
     display: flex;
     justify-content: center;
 }
+.work1-comment-container{
+    background-color: rgba(216, 223, 231, 0.644)
+    height: 50px;
+    width: 80%;
+    display: flex;
+    margin: 0px 0px 20px 100px;
+    align-items: center;
+    justify-content: space-between;
+}
+.work1-comment-container span{
+    margin: 0px 10px;
+    color: #fff;
+    font-size: 20px;
+    background-color: rgb(102, 99, 99);
+    height: 40px;
+    width: 120px;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    justify-content: center;
+
+}
+.work1-comment{
+    height: 40px;
+    width: 80%;
+    margin: 0px 100px;
+    color: #fff;
+    border: none;
+    border-bottom: 2px solid hwb(0 96% 3%);
+    background-color: black;
+    outline: none;
+    font-size: 18px;
+}
+
+
+
+
+.work-main2{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: black;
+}
+.work2{
+    height: 90%;
+    width: 50%;
+    margin: 10px 0px;
+    
+}
+.work2 img{
+    border-radius: 50px;
+    height: 65%;
+    width: 80%;
+    margin:0px 10px 0px 150px;
+}
 
 .work2 h2{
     color: #fff;
     font-size: 40px;
-    margin: 0px 100px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 40%;
 }
-.work2 h5{
-    color: rgba(173, 144, 187, 0.877);;
-    font-size: 20px;
-    margin: 20px 100px;
-
+.work2-desc{
+    height: 90%;
+    width: 50%;
 }
-.work2 button{
-    background-color: blueviolet;
-    height: 46px;
-    width: 81px;
-    border-radius: 10px;
+.work2-desc h2{
+    font-style: italic;
+    color: rgb(125, 79, 184);
+    margin: 200px 0px 50px 100px;
+    font-size: 30px;
+}
+.work2-desc p{
+    font-style: italic;
     color: #fff;
-    font-size: 18px;
-    font-weight: bold;
-    border: none;
-    transition: .3s;
-    margin: 20px 0px;
-
+    margin-left: 80px;
+    width: 75%;
+    height: 35vh;
+    line-height: 40px;
+    font-size: 25px;
 }
+
 
 .btn-work2-div{
     display: flex;
     justify-content: center;
 }
-.work2 img{
-    border-radius: 50px;
-    height: 55vh;
-    margin-left:20px;
+.work2-comment-container{
+    background-color: rgba(216, 223, 231, 0.644)
+    height: 50px;
+    width: 70%;
+    display: flex;
+    margin: 0px 0px 20px 100px;
+    align-items: center;
+    justify-content: space-between;
 }
+.work2-comment-container span{
+    margin: 0px 10px;
+    color: #fff;
+    font-size: 20px;
+    background-color: rgb(102, 99, 99);
+    height: 40px;
+    width: 120px;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    justify-content: center;
 
-.blog{
-    width: 100%;
+}
+.work2-comment{
+    height: 40px;
+    width: 70%;
+    margin: 0px 100px;
+    color: #fff;
+    border: none;
+    border-bottom: 2px solid hwb(0 96% 3%);
+    background-color: black;
+    outline: none;
+    font-size: 18px;
 }
 
 .blog-main{
     width: 90%;
-    margin: 8% 10%;
+    height: 890px;
+    margin: 0px 100px;
     display: flex;
     align-items: center;
-    align-items: center;
+    justify-content: center;
 }
 .blog1{
-    height: 60vh;
+    height: 50vh;
     width: 50vh;
+    margin-right: 30px;
     border-radius: 50px;
     background-color: rgba(104, 103, 101, 0.836);
+    transition: .7s;
+}
+.blog1:hover{
+    transform: scale(1.2);
+    background-color: rgba(168, 166, 160, 0.836);
 }
 .blog2{
-    height: 60vh;
+    height: 50vh;
     width: 50vh;
+    margin: 0px 0px;
     border-radius: 50px;
     background-color: rgba(104, 103, 101, 0.836);
     margin: 0px 30px;
+    transition: .7s;
+
+}
+.blog2:hover{
+    transform: scale(1.2);
+    background-color: rgba(168, 166, 160, 0.836);
 }
 .blog3{
-    height: 60vh;
+    height: 50vh;
     width: 50vh;
+    margin-left: 30px;
     border-radius: 50px;
     background-color: rgba(104, 103, 101, 0.836);
+    transition: .7s;
+
+}
+.blog3:hover{
+    transform: scale(1.2);
+    background-color: rgba(168, 166, 160, 0.836);
 }
 .blog1 img{
     height: 30vh;
@@ -737,16 +854,23 @@ span{
 }
 .bl1-desc{
     color: #fff;
-    margin: 0px 10px;
+    margin: 10px 20px;
     font-size: 20px;
+    width: 90%;
+    height: 60px;
+    overflow: hidden;
+    overflow-y: auto;
+}
+.views-blog1{
+    color: #fff;
+    margin-left: 180px;
 }
 .bl1-profile{
     height: 80px;
-    width: 80%;
-    margin: 20px 20px;
+    width: 90%;
+    margin: 10px 20px;
     display: flex;
-    align-items: center;
-    
+    align-items: center;  
 
 }
 
@@ -762,45 +886,6 @@ span{
    width: 70px;
    margin-left: 1px;
 }
-
-.bl1-view{
-    height: 80px;
-    width: 90%;
-    margin: 10px 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-
-
-
-}
-.bl1-view input{
-    height: 40px;
-    border-radius: 20px;
-    border: none;
-    font-size: 20px;
-}
-.bl1-view button{
-    height: 40px;
-    width: 60px;
-    border-radius: 20px;
-    border: none;
-    font-size: 20px;
-
-    
-}
-.bl1-view a{
-    color: black;
-    background-color: #fff;
-    height: 40px;
-    width: 60px;
-    text-decoration: none;
-    border-radius: 20px;
-    font-size: 20px;
-
-}
-
-
 .blog2 img{
     height: 30vh;
     width: 96%;
@@ -809,17 +894,23 @@ span{
 }
 .bl2-desc{
     color: #fff;
-    margin: 0px 10px;
+    margin: 10px 20px;
     font-size: 20px;
+    height: 60px;
+    overflow: hidden;
+    overflow-y: auto;
 }
 .bl2-profile{
     height: 80px;
     width: 80%;
-    margin: 20px 20px;
+    margin: 10px 20px;
     display: flex;
     align-items: center;
-    
-
+    width: 90%;
+}
+.views-blog2{
+    color: #fff;
+    margin-left: 180px;
 }
 
 .owner2{
@@ -832,7 +923,7 @@ span{
 .bl2-profile img{
    height: 80px;
    width: 70px;
-   margin-left: 1px;
+   margin: 0px;
 }
 
 .bl2-view{
@@ -842,9 +933,6 @@ span{
     display: flex;
     align-items: center;
     justify-content: space-around;
-
-
-
 }
 .bl2-view input{
     height: 40px;
@@ -880,17 +968,17 @@ span{
 }
 .bl3-desc{
     color: #fff;
-    margin: 0px 10px;
+    margin: 10px 20px;
     font-size: 20px;
+    height: 60px;
 }
 .bl3-profile{
     height: 80px;
     width: 80%;
-    margin: 20px 20px;
+    margin: 10px 20px;
     display: flex;
     align-items: center;
-    
-
+    width: 90%;
 }
 
 .owner3{
@@ -903,43 +991,10 @@ span{
 .bl3-profile img{
    height: 80px;
    width: 70px;
-   margin-left: 1px;
+   margin: 0px;
 }
-
-.bl3-view{
-    height: 80px;
-    width: 90%;
-    margin: 10px 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-
-
-
-}
-.bl3-view input{
-    height: 40px;
-    border-radius: 20px;
-    border: none;
-    font-size: 20px;
-}
-.bl3-view button{
-    height: 40px;
-    width: 60px;
-    border-radius: 20px;
-    border: none;
-    font-size: 20px;
-
-    
-}
-.bl3-view a{
-    color: black;
-    background-color: rgb(252, 249, 249);
-    height: 40px;
-    width: 60px;
-    text-decoration: none;
-    border-radius: 20px;
-    font-size: 20px;
-
+.views-blog3{
+    color: #fff;
+    margin-left: 180px;
 }
 
