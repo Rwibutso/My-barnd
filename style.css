@@ -4,7 +4,7 @@
     font-family: cursive;
 }
 .container{
-    background-color:rgb(8, 2, 2);
+    background-color:black;
     height: 100vh;
 }
 .header{
@@ -39,20 +39,23 @@ nav ul li{
 nav ul li a{
     color: white;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
     transition: 0.3s;
 }
 nav ul li a:hover{
     color: blueviolet;
 }
+.currentpage{
+    color: blueviolet;
+}
 .btn-login{
     background-color: blueviolet;
-    height: 46px;
-    width: 81px;
+    height: 50px;
+    width: 100px;
     border-radius: 10px;
     color: #fff;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
     border: none;
     transition: .3s;
@@ -67,7 +70,7 @@ nav ul li a:hover{
 
 }
 .content img{
-    height: 75vh;
+    height: 70vh;
     border-radius: 50px;
 }
 .main{
@@ -99,14 +102,14 @@ span{
     font-size: 35px;
 }
 .more-btn{
-    height: 45px;
-    width: 85px;
+    height: 65px;
+    width: 120px;
     border-radius: 10px;
     color: #fff;
     background-color: blueviolet;
     margin-top: 100px;
     margin-left: 25%;
-    font-size: 20px;
+    font-size: 25px;
     font-weight: bold;
     border: none;
     transition: .3s;
@@ -128,23 +131,23 @@ span{
     align-items: center;
 }
 .about img{
-    height: 75vh;
+    height: 70vh;
     border-radius: 50px;
 }
 .about-text{
     margin-left: 10%;
-    width: 40%;
-    height: 65vh;
+    width: 45%;
+    height: 70vh;
 }
 
 .about-text h2{
-    font-size: 65px;
+    font-size: 60px;
     color: #fff;
     margin-bottom: 10px;
 }
 .about-text h5{
     color: #fff;
-    font-size: 50px;
+    font-size: 40px;
     margin-bottom: 60px;
     
 }
@@ -152,7 +155,9 @@ span{
     font-size: 25px;
     color: #fff;
     margin-bottom: 10px;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
+    font-style: italic;
+    line-height: 40px;
     
 }
 span{
@@ -189,7 +194,7 @@ span{
     justify-content: center;
 }
 .skill-bar{
-    background-color: rgba(149, 126, 172, 0.425);
+    background-color: rgb(149, 126, 172);
     height: 550px;
     width: 30px;
 }
@@ -200,36 +205,36 @@ span{
 
 }
 .bar1{
-    background-color: rgba(71, 219, 12, 0.397);
+    background-color: rgb(71, 219, 12);
     height: 15px;
     width: 380px;
 
 }
 .bar2{
-    background-color: rgba(167, 157, 157, 0.377);
+    background-color: rgb(167, 157, 157);
     height: 15px;
     width: 350px;
 
 }
 .bar3{
-    background-color: rgba(199, 60, 60, 0.377);
+    background-color: rgb(199, 60, 60);
     height: 15px;
     width: 300px;
 }
 .bar4{
-    background-color: rgba(25, 155, 36, 0.5);
+    background-color: rgb(22, 165, 231);
     height: 15px;
     width: 270px;
 
 }
 .bar5{
-    background-color: rgba(196, 20, 173, 0.377);
+    background-color: rgb(196, 20, 173);
     height: 15px;
     width: 310px;
     margin-left: 20%;
 }
 .bar6{
-    background-color: rgba(63, 35, 187, 0.548);
+    background-color: rgb(84, 59, 199);
     height: 15px;
     width: 390px;
     margin-left: 20%;
@@ -313,20 +318,30 @@ span{
     align-items: center;
     justify-content: center;
 }
-.contact img{
-    height: 75vh;
+.contact-label-image{
+
+    background-color: #fff;
     border-radius: 50px 0px 0px 50px;
+    height: 70vh;
     width: 60vh;
+    
+
+}
+.contact img{
+    height: 70%;
+    border-radius: 50px 0px 0px 0px;
+    width: 100%;
 }
 .contact-form{
-    background-color:#fff;
+    background-color:rgb(253, 252, 252);
     width: 30%;
-    height: 75vh;border-radius: 0px 50px 50px 0px;
+    height: 70vh;
+    border-radius: 0px 50px 50px 0px;
 
 }
 .contact-form h2{
-    font-size: 75px;
-    padding: 50px;
+    font-size: 70px;
+    padding: 40px 0px 0px 30px;
 }
 .contact-form form{
     box-sizing: border-box;
@@ -351,14 +366,70 @@ span{
     background-color: blueviolet;
     border-radius: 10px;
     margin-top: 40px;
+    margin-left: 50px ;
+    height: 60px;
+    width: 80%;
+    font-size: 20px;
+    font-weight: bold;
+    transition: .3s;
+}
+.contact-label-media{
+    height: 30%;
+    width: 100%;
+    border-radius: 0px 0px 0px 50px;
+    overflow: hidden;
+    
+}
+.cont1-media {
+    display: flex;
+    align-items: center;
+    
+    
+}
+.cont1-media img{
+    height: 60px;
+    width: 70px;
+    margin: 10px 30px 0px 30px;
+}
+.cont1-media h5{
+    font-size: 16px;
 }
 
+.cont2-media {
+    display: flex;
+    align-items: center;
+}
+.cont2-media h5{
+    font-size: 16px;
+}
+.cont2-media img{
+    height: 55px;
+    width: 80px;
+    margin: 10px 30px 0px 30px;
+    border-radius: 50px;
+}
+.cont3-media {
+    display: flex;
+    align-items: center;
+}
+.cont3-media img{
+    height: 49px;
+    width: 50px;
+    margin: 10px 30px 0px 40px;
+    border-radius: 50px;
+}
+.cont3-media h5{
+    font-size: 16px;
+}
+.contact-form .inputbox input[type="submit"]:hover{
+    background-color: rgba(90, 5, 121, 0.993);
+}
 
 .mediacontact-container{
     display: flex;
     justify-content: center;
     width: 90%;
-    margin-left: 15px;
+    margin-left: 40px;
     resize: none;
     
 }
@@ -383,20 +454,21 @@ span{
     justify-content: center;
 }
 .login img{
-    height: 75vh;
+    height: 70vh;
     border-radius: 50px 0px 0px 50px;
     width: 60vh;
 }
 .login-form{
     background-color:#fff;
     width: 30%;
-    height: 75vh;border-radius: 0px 50px 50px 0px;
+    height: 70vh;
+    border-radius: 0px 50px 50px 0px;
 
 }
 .login-form h2{
     font-size: 75px;
     padding: 20px 0px;
-    margin-top: 30%;
+    margin-top: 25%;
 }
 .login-form h5{
     font-size: 25px;
@@ -422,11 +494,21 @@ span{
     outline: none;
 
 }
+
 .login-form .inputbox input[type="submit"]{
     color: #fff;
     background-color: blueviolet;
     border-radius: 10px;
     margin-top: 40px;
+    margin-left: 30px ;
+    height: 60px;
+    width: 80%;
+    font-size: 20px;
+    font-weight: bold;
+    transition: .3s;
+}
+.login-form .inputbox input[type="submit"]:hover{
+    background-color: rgba(90, 5, 121, 0.993);
 }
 .passforgot{
     font-size: 17px;
@@ -475,20 +557,21 @@ span{
     justify-content: center;
 }
 .register img{
-    height: 75vh;
+    height: 70vh;
     border-radius: 50px 0px 0px 50px;
     width: 60vh;
 }
 .register-form{
     background-color:#fff;
     width: 30%;
-    height: 75vh;border-radius: 0px 50px 50px 0px;
+    height: 70vh;
+    border-radius: 0px 50px 50px 0px;
 
 }
 .register-form h2{
     font-size: 75px;
     padding: 10px 20px;
-    margin-top: 15%;
+    margin-top: 10%;
 }
 .register-form h5{
     font-size: 20px;
@@ -514,16 +597,29 @@ span{
     outline: none;
 
 }
+
 .register-form .inputbox input[type="submit"]{
     color: #fff;
     background-color: blueviolet;
     border-radius: 10px;
     margin-top: 40px;
+    margin-left: 30px ;
+    height: 60px;
+    width: 80%;
+    font-size: 20px;
+    font-weight: bold;
+    transition: .3s;
 }
+.register-form .inputbox input[type="submit"]:hover{
+    background-color: rgba(90, 5, 121, 0.993);
+}
+
+
 .bottomask{
     display: flex;
     justify-content: space-around;
     width: 70%;
+    margin-left: 25px;
 }
 .work-main{
     width: 90%;
@@ -602,3 +698,248 @@ span{
     height: 55vh;
     margin-left:20px;
 }
+
+.blog{
+    width: 100%;
+}
+
+.blog-main{
+    width: 90%;
+    margin: 8% 10%;
+    display: flex;
+    align-items: center;
+    align-items: center;
+}
+.blog1{
+    height: 60vh;
+    width: 50vh;
+    border-radius: 50px;
+    background-color: rgba(104, 103, 101, 0.836);
+}
+.blog2{
+    height: 60vh;
+    width: 50vh;
+    border-radius: 50px;
+    background-color: rgba(104, 103, 101, 0.836);
+    margin: 0px 30px;
+}
+.blog3{
+    height: 60vh;
+    width: 50vh;
+    border-radius: 50px;
+    background-color: rgba(104, 103, 101, 0.836);
+}
+.blog1 img{
+    height: 30vh;
+    width: 96%;
+    margin:10px 10px;
+    border-radius: 50px;
+}
+.bl1-desc{
+    color: #fff;
+    margin: 0px 10px;
+    font-size: 20px;
+}
+.bl1-profile{
+    height: 80px;
+    width: 80%;
+    margin: 20px 20px;
+    display: flex;
+    align-items: center;
+    
+
+}
+
+.owner1{
+    height: 70px;
+    width: 70px;
+    border-radius: 50px;
+    overflow: hidden;
+    margin: 10px 30px 10px 10px;
+}
+.bl1-profile img{
+   height: 80px;
+   width: 70px;
+   margin-left: 1px;
+}
+
+.bl1-view{
+    height: 80px;
+    width: 90%;
+    margin: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+
+
+}
+.bl1-view input{
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    font-size: 20px;
+}
+.bl1-view button{
+    height: 40px;
+    width: 60px;
+    border-radius: 20px;
+    border: none;
+    font-size: 20px;
+
+    
+}
+.bl1-view a{
+    color: black;
+    background-color: #fff;
+    height: 40px;
+    width: 60px;
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 20px;
+
+}
+
+
+.blog2 img{
+    height: 30vh;
+    width: 96%;
+    margin:10px 10px;
+    border-radius: 50px;
+}
+.bl2-desc{
+    color: #fff;
+    margin: 0px 10px;
+    font-size: 20px;
+}
+.bl2-profile{
+    height: 80px;
+    width: 80%;
+    margin: 20px 20px;
+    display: flex;
+    align-items: center;
+    
+
+}
+
+.owner2{
+    height: 70px;
+    width: 70px;
+    border-radius: 50px;
+    overflow: hidden;
+    margin: 10px 30px 10px 10px;
+}
+.bl2-profile img{
+   height: 80px;
+   width: 70px;
+   margin-left: 1px;
+}
+
+.bl2-view{
+    height: 80px;
+    width: 90%;
+    margin: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+
+
+}
+.bl2-view input{
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    font-size: 20px;
+}
+.bl2-view button{
+    height: 40px;
+    width: 60px;
+    border-radius: 20px;
+    border: none;
+    font-size: 20px;
+
+    
+}
+.bl2-view a{
+    color: black;
+    background-color: #fff;
+    height: 40px;
+    width: 60px;
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 20px;
+
+}
+
+.blog3 img{
+    height: 30vh;
+    width: 96%;
+    margin:10px 10px;
+    border-radius: 50px;
+}
+.bl3-desc{
+    color: #fff;
+    margin: 0px 10px;
+    font-size: 20px;
+}
+.bl3-profile{
+    height: 80px;
+    width: 80%;
+    margin: 20px 20px;
+    display: flex;
+    align-items: center;
+    
+
+}
+
+.owner3{
+    height: 70px;
+    width: 70px;
+    border-radius: 50px;
+    overflow: hidden;
+    margin: 10px 30px 10px 10px;
+}
+.bl3-profile img{
+   height: 80px;
+   width: 70px;
+   margin-left: 1px;
+}
+
+.bl3-view{
+    height: 80px;
+    width: 90%;
+    margin: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+
+
+}
+.bl3-view input{
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    font-size: 20px;
+}
+.bl3-view button{
+    height: 40px;
+    width: 60px;
+    border-radius: 20px;
+    border: none;
+    font-size: 20px;
+
+    
+}
+.bl3-view a{
+    color: black;
+    background-color: rgb(252, 249, 249);
+    height: 40px;
+    width: 60px;
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 20px;
+
+}
+
