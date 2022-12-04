@@ -697,6 +697,9 @@ span{
     justify-content: center;
 
 }
+.work-like-hover:hover{
+    background-color: blueviolet;
+}
 .work1-comment{
     height: 40px;
     width: 80%;
@@ -801,11 +804,44 @@ span{
 
 .blog-main{
     width: 90%;
-    height: 890px;
+    height: 690px;
     margin: 0px 100px;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.blog form{
+    margin-top: 90px;
+    margin-left: 37%;
+}
+.blog form input{
+    font-size: 25px;
+    box-sizing: border-box;
+}
+.blog form input[type="text"]{
+    height: 50px;
+    width: 350px;
+    border: none;
+    padding: 0px 20px;
+    outline: none;
+    border-radius: 30px 0px 0px 30px;
+    background-color: rgb(204, 204, 195);
+    font-style: italic;
+}
+.blog form input[type="submit"]{
+    height: 50px;
+    width: 150px;
+    border: none;
+    padding: 0px 10px;
+    outline: none;
+    border-radius: 0px 30px 30px 0px;
+    cursor: pointer;
+    color: #fff;
+    background-color: rgba(104, 103, 101, 0.836);
+    transition: .3s;
+}
+.blog form input[type="submit"]:hover{
+    background-color: blueviolet;
 }
 .blog1{
     height: 50vh;
@@ -817,7 +853,7 @@ span{
 }
 .blog1:hover{
     transform: scale(1.2);
-    background-color: rgba(168, 166, 160, 0.836);
+    background-color: rgba(197, 197, 183, 0.959);
 }
 .blog2{
     height: 50vh;
@@ -831,7 +867,7 @@ span{
 }
 .blog2:hover{
     transform: scale(1.2);
-    background-color: rgba(168, 166, 160, 0.836);
+    background-color: rgba(197, 197, 183, 0.959);;
 }
 .blog3{
     height: 50vh;
@@ -844,7 +880,7 @@ span{
 }
 .blog3:hover{
     transform: scale(1.2);
-    background-color: rgba(168, 166, 160, 0.836);
+    background-color: rgba(197, 197, 183, 0.959);;
 }
 .blog1 img{
     height: 30vh;
@@ -861,6 +897,14 @@ span{
     overflow: hidden;
     overflow-y: auto;
 }
+.bl1-desc:hover, .bl2-desc:hover, .bl3-desc:hover{
+    color: rgb(83, 31, 133);
+}
+.bl1-desc-link, .bl2-desc-link, .bl3-desc-link{
+    text-decoration: none;
+}
+
+
 .views-blog1{
     color: #fff;
     margin-left: 180px;
@@ -998,3 +1042,86 @@ span{
     margin-left: 180px;
 }
 
+
+.blog1-details{
+    background-color: aliceblue;
+    height: auto;
+    width: 100%;
+    background-color: black;
+    padding-bottom: 30px;
+}
+.blog1-details-container h2{
+    color: beige;
+    margin-top: 100px;
+    margin-left: 20%;
+    font-size: 35px;
+}
+.blog1-details-container h3{
+      font-size: 30px;
+      font-style: italic;
+      margin-top: 100px;
+      margin-left: 200px;
+      margin-bottom: 50px;
+      color: rgb(116, 56, 194);
+      
+}
+.blog1-details-container img{
+    margin-left: 200px ;
+    margin-bottom: 30px;
+    width: 80%;
+}
+.blog1-details-container p{
+    margin-left: 200px;
+    width: 70%;
+    font-size: 20px;
+    font-style: italic;
+    color: #fff;
+    line-height: 30px;
+}
+.blog1-comment-section{
+    height: 15vh;
+    width: 80%;
+    margin: 100px 0px 100px 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.blog1-comment-container{
+    background-color: rgba(216, 223, 231, 0.644)
+    height: 50px;
+    width: 70%;
+    display: flex;
+    margin: 0px 0px 20px 100px;
+    align-items: center;
+    
+}
+.blog1-comment-container span{
+    margin: 0px 10px;
+    color: #fff;
+    font-size: 20px;
+    background-color: rgb(102, 99, 99);
+    height: 40px;
+    width: 120px;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    justify-content: center;
+    transition: .3s;
+
+}
+.blog1-comment-container-hover:hover{
+    background-color: rgb(121, 31, 206);
+}
+.blog1-comment{
+    height: 40px;
+    width: 90%;
+    margin: 0px 100px;
+    color: #fff;
+    border: none;
+    border-bottom: 2px solid hwb(0 96% 3%);
+    background-color: black;
+    outline: none;
+    font-size: 18px;
+}
