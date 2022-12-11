@@ -3,22 +3,24 @@
     padding: 0;
     font-family: cursive;
 }
-.container{
-    background-color:rgb(8, 8, 8);
-    height: auto;
-}
 
 .header{
+    top: 0;
     padding: 10px 0PX;
     display: flex;
     justify-content: space-around;
+    background-color: black;
+    position: sticky;
+    height: 8vh;
 }
 .short-display-line{
     display: none;
 }
 nav{
     display: flex;
-    align-items: center;    
+    text-align: center;
+    align-items: center;  
+    
 }
 .div-logo{
     border-radius: 50px;
@@ -68,9 +70,9 @@ nav ul li a:hover{
     color:#fff;
 }
 .content{
+    height: 90vh;
     width: 100%;
-    height: 890px;  
-
+    background-color: black;
 }
 .content img{
     height: 70vh;
@@ -125,12 +127,15 @@ span{
 }
 
 .about{
+    height: 90vh;
     width: 100%;
+    background-color: black;
+
 }
 
 .about-main{
     width: 90%;
-    height: 890px;
+    height: 100%;
     margin: 0px 100px;
     display: flex;
     align-items: center;
@@ -191,11 +196,13 @@ span{
 }
 
 .skill{
+    height: 90vh;
     width: 100%;
+    background-color: black;
 }
 .skill-main{
     width: 90%;
-    height: 890px;
+    height: 100%;
     margin: 0px 100px;
     display: flex;
     align-items: center;
@@ -317,10 +324,15 @@ span{
     width: 100%;
     margin: 12% 0px;
 }
+.contact{
+    height: 90vh;
+    width: 100%;
+    background-color: black;
+}
 
 .contact-main{
     width: 90%;
-    height: 890px;
+    height: 100%;
     margin: 0px 100px;
     display: flex;
     align-items: center;
@@ -452,9 +464,14 @@ span{
 .mediacontact-container img:hover{
    transform: scale(1.3);
 }
+.login{
+    height: 90vh;
+    width: 100%;
+    background-color: black;
+}
 .login-main{
     width: 90%;
-    height: 890px;
+    height: 100%;
     margin: 0px 100px;
     display: flex;
     align-items: center;
@@ -554,10 +571,15 @@ span{
 .link2:hover{
     color: blueviolet;
 }
+.register{
+    height: 90vh;
+    width: 100%;
+    background-color: black;
+}
 
 .register-main{
     width: 90%;
-    height: 890px;
+    height: 100%;
     margin: 0px 100px;
     display: flex;
     align-items: center;
@@ -628,10 +650,14 @@ span{
     width: 70%;
     margin-left: 25px;
 }
-
+.work{
+    height: auto;
+    width: 100%;
+    background-color: black;
+}
 .work-main1{
     width: 90%;
-    height: 90%;
+    height: 100%;
     margin-left: 100px;
     display: flex;
     align-items: center;
@@ -718,12 +744,8 @@ span{
     outline: none;
     font-size: 18px;
 }
-
-
-
-
 .work-main2{
-    width: 100%;
+    width: 90%;
     height: 100%;
     display: flex;
     align-items: center;
@@ -814,17 +836,23 @@ span{
     outline: none;
     font-size: 18px;
 }
+.blog{
+    height: 90vh;
+    width: 100%;
+    background-color: black;
+}
 
 .blog-main{
     width: 90%;
-    height: 790px;
+    height: 80%;
     margin: 0px 100px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .blog form{
-    margin-top: 90px;
+    padding-top: 5%;
+
     margin-left: 37%;
 }
 .blog form input{
@@ -842,7 +870,7 @@ span{
     font-style: italic;
 }
 .blog form input[type="submit"]{
-    height: 50px;
+    height: 52px;
     width: 150px;
     border: none;
     padding: 0px 10px;
@@ -871,7 +899,6 @@ span{
 .blog2{
     height: 50vh;
     width: 50vh;
-    margin: 0px 0px;
     border-radius: 50px;
     background-color: rgba(104, 103, 101, 0.836);
     margin: 0px 30px;
@@ -1140,12 +1167,12 @@ span{
 }
 
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1532px) {
     .div-logo{
         margin-right: -100px;
     }
     .btn-login{
-        margin-left: 100px;
+        margin-left: 200px;
     }
   
     nav ul li{
@@ -1214,6 +1241,10 @@ span{
         margin:0px 10px;
        
     }
+    .media-container{
+        margin-top: -5%;
+       
+    }
     .skill-main{
         height: 790px; 
     }
@@ -1273,294 +1304,355 @@ span{
         margin: 0px 50px;
         
     }
-
-
-.work-main2{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    background-color: black;
-}
-.work2{
-    height: 90%;
-    width: 50%;
-    margin: 10px 60px;
+    .work-main2{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        background-color: black;
+    }
+    .work2{
+        height: 90%;
+        width: 50%;
+        margin: 10px 60px;
+        
+    }
+    .work2 img{
+        border-radius: 50px;
+        height: 50%;
+        width: 90%;
+        margin:0px 0px 0px 0px;
+    }
     
-}
-.work2 img{
-    border-radius: 50px;
-    height: 50%;
-    width: 90%;
-    margin:0px 0px 0px 0px;
-}
-
-.work2 h2{
-    color: #fff;
-    font-size: 30px;
-    margin-top: 150px;
-    margin-bottom: 100px;
-    margin-left: 35%;
-}
-.work2-desc{
-    height: 90%;
-    width: 50%;
-}
-.work2-desc h2{
-    margin: 200px 0px 50px 100px;
-    font-size: 22px;
-}
-.work2-desc p{
-    margin-left: 0px;
-    width: 90%;
-    height: 35vh;
-    line-height: 30px;
-    font-size: 20px;
-}
-
-.work2-comment-container{
-    width: 90%;
-    margin: 10px 0px 20px 0px;
-}
-.work2-comment-container span{
-    margin: 0px 10px;
-    height: 35px;
-
-}
-.work2-comment{
-    width: 87%;
-    margin: 0px 10px;
+    .work2 h2{
+        color: #fff;
+        font-size: 30px;
+        margin-top: 150px;
+        margin-bottom: 100px;
+        margin-left: 35%;
+    }
+    .work2-desc{
+        height: 90%;
+        width: 50%;
+    }
+    .work2-desc h2{
+        margin: 200px 0px 50px 100px;
+        font-size: 22px;
+    }
+    .work2-desc p{
+        margin-left: 0px;
+        width: 90%;
+        height: 35vh;
+        line-height: 30px;
+        font-size: 20px;
+    }
     
-}
-
-.contact-main{
-    width: 80%;
-    height: 790px;
-    margin: 0px 120px;
+    .work2-comment-container{
+        width: 90%;
+        margin: 10px 0px 20px 0px;
+    }
+    .work2-comment-container span{
+        margin: 0px 10px;
+        height: 35px;
     
-}
-
-.contact img{
-    height: 68%;
-    border-radius: 50px 0px 0px 0px;
-    width: 100%;
-}
-.contact-form{
-    background-color:rgb(253, 252, 252);
-    width: 50%;
-    height: 70vh;
-    border-radius: 0px 50px 50px 0px;
-
-}
-.contact-label-image{
-    width: 40%;
-}
-
-.contact-form .inputbox input,
-.contact-form .inputbox textarea{
-    width: 100%;
-    padding: 10px 0px;
-    font-size: 14px;
-    border: none;
-    margin: 10px 0px;
-    border-bottom: 2px solid blueviolet;
-    outline: none;
-
-}
-
-.contact-label-media{
-    height: 32%;
+    }
+    .work2-comment{
+        width: 87%;
+        margin: 0px 10px;
+        
+    }
     
-}
-.cont1-media img{
-    height: 50px;
-    width: 70px;
-    margin: 10px 30px 0px 30px;
-}
-
-.cont2-media img{
-    height: 55px;
-    width: 80px;
-    margin: 10px 30px 0px 30px;
-}
-
-.cont3-media img{
-    height: 49px;
-    width: 50px;
-    margin: 10px 30px 0px 40px;
-    border-radius: 50px;
-}
-
-.mediacontact-container{
-    width: 85%;
-    margin-top: -30px;
+    .contact-main{
+        width: 80%;
+        height: 790px;
+        margin: 0px 120px;
+        
+    }
     
-}
-.mediacontact-container img{
-    height: 50px;
-    width: 50px;
-    border-radius: 50px;
-    margin:0px 10px;
-}
-
-
-.login-main{
-    width: 90%;
-    height: 790px;
-    margin: 0px 60px;
-}
-.login img{
-    width: 50vh;
-}
-.login-form{
-    width: 42%;
-
-}
-.login-form h2{
-    font-size: 60px;
-    margin-top: 20%;
-}
-.login-form h5{
-    font-size: 20px;
+    .contact img{
+        height: 68%;
+        border-radius: 50px 0px 0px 0px;
+        width: 100%;
+    }
+    .contact-form{
+        background-color:rgb(253, 252, 252);
+        width: 50%;
+        height: 70vh;
+        border-radius: 0px 50px 50px 0px;
     
-}
-.login-form .inputbox{
-    margin-top: -2px;
- }
-.loginregister{
-    display: flex;
-    justify-content: space-between;
-    width: 150px;
-    margin-left: 250px;
-    margin-top: 20px;
-}
-.register{
-    background-color: rgb(7, 6, 4);
-}
-.register-main{
-    height: 790px;
-    width: 90%;
-    margin: 0px 60px;
- 
-}
-.register img{
-    width: 50vh;
-}
-.register-form{
-    width: 42%;
-}
-.register-form h2{
-    font-size: 60px;
-    margin-top: 18%;
-}
-.register-form h5{
-    font-size: 16px;
-}
-.loginregister{
- display: flex;
- justify-content: space-between;
- width: 150px;
- margin-left: 250px;
- margin-top: 30px;
-}
-
-.bottomask{
-    margin-top: -13px;
+    }
+    .contact-label-image{
+        width: 40%;
+    }
     
-}
-.link4{
-    font-size: 18px;
-    margin-left: -30px;
-    margin-top: -5px;
-    font-weight: bold;
-    text-decoration: none;
-    color: blueviolet;
-}
-
-.blog-main{
-    height: 620px;
-    margin: 20px 60px;
-    overflow-x: hidden;
-    overflow-x: auto;
-    padding-right:40px;
+    .contact-form .inputbox input,
+    .contact-form .inputbox textarea{
+        width: 100%;
+        padding: 10px 0px;
+        font-size: 14px;
+        border: none;
+        margin: 10px 0px;
+        border-bottom: 2px solid blueviolet;
+        outline: none;
     
-}
-.blog input{
-    margin-top: -20px;
-}
-.blog1{
-    margin-left: 400px;
-}
-.blog1 img{
-    width: 95%;
-}
-.bl1-profile{
-    height: 80px;
-    width: 50vh;
-    margin-top: -10px;
-    margin-left: 10px;
-    display: flex;
-    align-items: center;  
+    }
+    
+    .contact-label-media{
+        height: 32%;
+        
+    }
+    .cont1-media img{
+        height: 50px;
+        width: 70px;
+        margin: 10px 30px 0px 30px;
+    }
+    
+    .cont2-media img{
+        height: 55px;
+        width: 80px;
+        margin: 10px 30px 0px 30px;
+    }
+    
+    .cont3-media img{
+        height: 49px;
+        width: 50px;
+        margin: 10px 30px 0px 40px;
+        border-radius: 50px;
+    }
+    
+    .mediacontact-container{
+        width: 85%;
+        margin-top: -30px;
+        
+    }
+    .mediacontact-container img{
+        height: 50px;
+        width: 50px;
+        border-radius: 50px;
+        margin:0px 10px;
+    }
+    
+    
+    .login-main{
+        width: 90%;
+        height: 790px;
+        margin: 0px 60px;
+    }
+    .login img{
+        width: 50vh;
+    }
+    .login-form{
+        width: 42%;
+    
+    }
+    .login-form h2{
+        font-size: 60px;
+        margin-top: 20%;
+    }
+    .login-form h5{
+        font-size: 20px;
+        
+    }
+    .login-form .inputbox{
+        margin-top: -2px;
+     }
+    .loginregister{
+        display: flex;
+        justify-content: space-between;
+        width: 150px;
+        margin-left: 250px;
+        margin-top: 20px;
+    }
+    .register{
+        background-color: rgb(7, 6, 4);
+    }
+    .register-main{
+        height: 790px;
+        width: 90%;
+        margin: 0px 60px;
+     
+    }
+    .register img{
+        width: 50vh;
+    }
+    .register-form{
+        width: 42%;
+    }
+    .register-form h2{
+        font-size: 60px;
+        margin-top: 18%;
+    }
+    .register-form h5{
+        font-size: 16px;
+    }
+    .loginregister{
+     display: flex;
+     justify-content: space-between;
+     width: 150px;
+     margin-left: 250px;
+     margin-top: 30px;
+    }
+    
+    .bottomask{
+        margin-top: -13px;
+        
+    }
+    .link4{
+        font-size: 18px;
+        margin-left: -30px;
+        margin-top: -5px;
+        font-weight: bold;
+        text-decoration: none;
+        color: blueviolet;
+    }
+   
+    .blog1{
+        margin-left: -50px;
+    }
+    .blog2{
+        margin: 0px 10px;
 
-}.owner-desc{
-    width: 90px;
-    margin-right: 50px;
-}
-.views-blog1{
-    width: 100px;
-    margin-left: 90px;
-}
-.owner-desc h2{
-    font-size: 18px;
-}
-.views-blog2{
-    width: 100px;
-    margin-left: 90px;
-}
-.blog2 img{
-    width: 95%;
-}
-.bl2-profile{
-    height: 80px;
-    width: 50vh;
-    margin-top: -10px;
-    margin-left: 10px;
-    display: flex;
-    align-items: center;  
+    }
+    .blog1:hover, .blog2:hover, .blog3:hover{
+        transform: none;
+    }
+    .bl1-profile{
+        margin-top: -2%;
+        width: 100%;
+        margin-left: 1%;
+    }
+    .bl2-profile{
+        margin-top: -2%;
+        width: 100%;
+        margin-left: 1%;
+    }
+    .bl3-profile{
+        margin-top: -2%;
+        width: 100%;
+        margin-left: 1%;
+    }
+    .owner-desc{
+        width: 90px;
+        margin-right: -15%;
+    }
+    /* .blog-main{
+        height: 620px;
+        margin: 20px 60px;
+        overflow-x: hidden;
+        overflow-x: auto;
+        padding-right:40px;
+        
+    }
+    .blog input{
+        margin-top: -20px;
+    }
+    .blog1{
+        margin-left: 400px;
+    }
+    .blog1 img{
+        width: 95%;
+    } 
+    /* .bl1-profile{
+        height: 80px;
+        width: 50vh;
+        margin-top: -10px;
+        margin-left: 10px;
+        display: flex;
+        align-items: center;  
+    
+    }
+    .owner-desc{
+        width: 90px;
+        margin-right: 50px;
+    }
+    .views-blog1{
+        width: 100px;
+        margin-left: 90px;
+    }
+    .owner-desc h2{
+        font-size: 18px;
+    }
+    .views-blog2{
+        width: 100px;
+        margin-left: 90px;
+    }
+    .blog2 img{
+        width: 95%;
+    }
+    .bl2-profile{
+        height: 80px;
+        width: 50vh;
+        margin-top: -10px;
+        margin-left: 10px;
+        display: flex;
+        align-items: center;  
+    
+    }
+    
+    .views-blog2{
+        width: 100px;
+        margin-left: 90px;
+    }
+    
+    .blog3 img{
+        width: 95%;
+    }
+    .bl3-profile{
+        height: 80px;
+        width: 50vh;
+        margin-top: -10px;
+        margin-left: 10px;
+        display: flex;
+        align-items: center;  
+    
+    }
+    
+    .views-blog3{
+        width: 100px;
+        margin-left: 90px;
+    } */
+
+
 
 }
+@media only screen and (max-width:1347px) {
+    .blog1{
+        margin-left: -70px;
+        transform: scale(.9);
+    }
+    .blog2{
+        margin: 0px -10px;
+        transform: scale(.9);
 
-.views-blog2{
-    width: 100px;
-    margin-left: 90px;
-}
+    }
+    .blog3{
+        transform: scale(.9);
 
-.blog3 img{
-    width: 95%;
+    }
 }
-.bl3-profile{
-    height: 80px;
-    width: 50vh;
-    margin-top: -10px;
-    margin-left: 10px;
-    display: flex;
-    align-items: center;  
+@media only screen and (max-width:1241px) {
+    .blog1{
+        margin-left: -70px;
+        transform: scale(.8);
+    }
+    .blog2{
+        margin: 0px -100px;
+        transform: scale(.8);
 
-}
+    }
+    .blog3{
+        transform: scale(.8);
 
-.views-blog3{
-    width: 100px;
-    margin-left: 90px;
+    }
 }
-}
-
-@media only screen and (max-width: 980px) {
+@media only screen and (max-width: 1106px) {
+   
     .lines{
         display: block;
         cursor: pointer;
         margin-top: 25px;
-        margin-left: 70%;
+        margin-left: 90%;
     }
     .lines .line{
         height: 3px;
@@ -1569,32 +1661,39 @@ span{
         background: #fff;
 
     }
-    .nav-bar{
-        position: absolute;
-        top: 80px;
-        left: 0px;
-        right: 0px;
-        width: 100%;
-        height: 0%;
-        transition: .5s;
-        background: rgb(93, 64, 107);
-        display: block;
+    .content{
+        height: auto;
     }
-    .nav-bar.open{
-        height: 60%;
-    }
-    .nav-bar ul li, .btn-login{
+  
+    .nav-bar {
+        position: fixed;
+        width: 45%;
+        height: 50vh;
+        background-color: rgb(49, 48, 49);
+        opacity: 80%;
+        top: 88px;
+        right:-100%;
+        transition: all .5s;
+        border-radius: 40px;
         display: block;
-        width: fit-content;
-        margin: 40px auto 0px 400px;
-        align-items: center;
-        opacity: 0;
-        
+
+    }
+    .nav-bar.show{
+        right: 0;
+    }
+
+   
+    nav ul li{
+        display: block;
+        margin: 20px 10px;
+        line-height: 35px;
+        text-align: center;
+
     }
     .btn-login{
-        width: 90px;
-        margin-top: 80px;
+        margin-left: 0%;
     }
+    
 
     .main{
         display: flex;
@@ -1662,35 +1761,50 @@ span{
     .work-main1{
         display: flex;
         flex-direction: column;
+        justify-content: center;
+
     }
     .work1 {
         width: 85%;
         height: 60%;
     }
     .work1 img{
-        margin:0px;
-        height: 70%;
+        margin-left: 90px;
+        width: 80%;
+        height: 80%;
+        margin-top: -40px;
 
     } 
+    .work1 h2{
+        margin-top: 10px;
+    }
    
     .work1-desc h2{
-        margin: 0px 0px 30px 100px;
+        margin: 0px 0px 10px 250px;
         font-size: 23px;
     }
     .work1-desc p{
         font-size: 20px;
+        margin-left: 110px;
     }
     .work1-desc {
         width: 90%;
         height: 35vh;
     }
     .work1-comment-container{
-        margin-top: -90px;
+        margin-top: -10%;
+        margin-left: 110px;
+    }
+    .work1-comment{
+        margin-left: 110px;
     }
     .work-main2{
         display: flex;
         flex-direction: column;
-        height: 135vh;
+        height: 120vh;
+        width: 90%;
+        margin-left: 60px;
+
     }
     .work2 {
         width: 85%;
@@ -1700,37 +1814,68 @@ span{
         height: 100%;
     }
     .work2 h2{
-        margin-top: 20px;
-        margin-bottom: 80px;
+        margin-top: -50px;
+        margin-bottom: 50px;
     }
    
     .work2 img{
-        height: 75%;
+        height: 100%;
+        width: 80%;
+        margin-left: 90px;
     }
     .work2-desc h2{
-        margin: -430px 0px 30px 100px;
+        margin: -400px 0px 20px 250px;
         font-size: 23px;
     }
     .work2-desc p{
         font-size: 20px;
         margin-left: 20px;
+        margin-left: 90px;
+
     }
     .work2-desc {
         width: 90%;
         height: 35vh;
+        margin-left: 30px;
+
     }
     .work2-comment-container{
-        margin-top: -90px;
+        margin-top: -12%;
+        margin-left: 80px;
+
     }
     .work2-comment{
         margin-bottom: 50px;
+        margin-left: 90px;
+
     }
     .blog-main{
         margin-left: 30px;
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+        height: 550px;
+        justify-content: center;
+        padding: 0px;
+        overflow-y: hidden;
+        overflow-y: auto;
         
     }
+    .blog form{
+        margin-left: 25%;
+    }
     .blog1{
-        margin-left: 70%;
+        height: 50vh;
+        width: 50vh;
+        margin: 0px;
+        margin-top: 120%;
+    }
+    .blog2{
+        margin: 60px 0px;
+    }
+    .blog3{
+        margin: 0px;
+        margin-bottom: 50px;
     }
     .contact-main{
         width: 90%;
@@ -1768,28 +1913,44 @@ span{
    
 }
 
-@media only screen and (max-width:810px) {
+@media only screen and (max-width:880px) {
     .html, .css, .javascpt,.react,.node,.django{
         font-size: 35px;
     }
     .one, .two, .three,.four,.five,.six{
         margin-top: 20px;
     }
-    .work1-desc p{
+    .work1 img{
+        margin-left: 3%;
         width: 90%;
-        margin-bottom: 12%;
     }
+    .work1-desc h2{
+        margin-top: 30px;
+        margin-left: 20%;
+    }
+    .work1-desc p{
+        margin-left: 5%;
+    }
+    .work1-comment-container{
+        margin-left: 5%;
+        margin-top: -10%;
+    }
+    .work1-comment{
+        margin-left: 5%;
+    }
+   
     .work2 h2{
-        margin-top: 20%;
+        margin-top: 10%;
     }
     .work2 img{
         margin-bottom: 10%;
-        margin-left: 10%;
-        height: 50%;
+        margin-left: 5%;
+        height: 65%;
+        width: 90%;
 
     }
     .work2-desc p{
-        margin-left: 10%;
+        margin-left: 5%;
         height: auto;
         margin-bottom: 15%;
     }
@@ -1797,16 +1958,17 @@ span{
         margin-left: 30%;
     }
     .work2-comment-container{
-        margin-left: 10%;
+        margin-left: 5%;
     }
     .work2-comment{
-        margin-left: 10%;
+        margin-left: 5%;
     }
     .work-main2{
         height: 140vh;
+        margin-left: 5%;
     }
     .blog1{
-        margin-left: 100%;
+        margin-top: 150%;
     }
     .blog form{
         margin-left: 20%;
@@ -1828,7 +1990,9 @@ span{
         width: 60%;
     }
 }
-@media only screen and (max-width:600px){
+
+
+@media only screen and (max-width:730px){
     .main img{
         height: 50vh;
     }
@@ -1893,30 +2057,33 @@ span{
 
     }
     .work-main1 img{
-        height: 60%;
+        height: 70%;
         width: 90%;
-        margin-bottom: 0px;
-        
+        margin-bottom: 0px;  
     }
     .work1-desc h2{
         margin-top: -10px;
     }
     .work1-desc p{
-        margin-bottom: 20%;
+        margin-bottom: 10%;
     }
     .work1-comment-container{
         margin-bottom: 10px;
     }
    
     .work2 h2{
-        margin-top: 150px;
+        margin-top: 100px;
     }
     .work2-desc h2{
         height: 20px;
-        margin-top: -350px;
+        margin-top: -400px;
     }
     .work2-desc p{
-        margin-bottom:100px;
+        margin-bottom:120px;
+    }
+    .work-main2 img{
+        height: 55%;
+        width: 90%;
     }
 
     .blog-main{
@@ -1926,7 +2093,7 @@ span{
         
     }
     .blog1{
-        margin-left: 110vh;
+        margin-top: 150%;
     }
     .blog form input{
          font-size: 20px;
@@ -2000,8 +2167,8 @@ span{
     }
     .media-container img{
         padding: 0px;
-        height: 40px;
-        width: 40px;
+        height: 35px;
+        width: 35px;
     }
     .about-main .cont-image{
         margin-bottom: 10%;
@@ -2009,7 +2176,7 @@ span{
     }
     
 }
-@media only screen and (max-width:414px) {
+@media only screen and (max-width:562px) {
    
     .main img{
         height: 45vh;
@@ -2017,6 +2184,9 @@ span{
     }
     .main{
         margin-left: 20px;
+    }
+    .about-text h5, p{
+        margin-left: -60px;
     }
     .about{
         height: auto;
@@ -2030,22 +2200,31 @@ span{
         width: 40px;
     }
     .about-main .cont-image{
-        height: 40vh;
+        height: 35vh;
+        width: 90%;
         margin-bottom: 10%;
         margin-left: -25px;
     }
 
     .skill-bar{
         width: 10px;
+        margin-left: -50px;
+    }
+    .skill{
+        margin-top: 40%;
+    }
+    .skill-main{
+        height: 60%;
+        align-items: center;
     }
 
     .html, .css, .javascpt,.react,.node,.django{
         font-size: 22px;
     }
     .one, .two, .three,.four,.five,.six{
-        margin-top: 50px;
-        margin-left: -50px;
-        width: 100%;
+        margin-top: 30px;
+        margin-left: -60px;
+        width: 115%;
     }
     .skill-bar{
         height: 500px;
@@ -2074,42 +2253,48 @@ span{
         height: 10px;
         width: 170px;
     }
+    
     .work1 h2{
-        margin-left: 50px; 
+        margin-left: 70px; 
         font-size: 35px;
     }
     .work img{
-        width: 35vh;
-        height: 25vh;
+        width: 100%;
+        height: 50%;
         margin-left: -10px;
         margin-top: -20px;
     }
     .work1-desc h2{
-        margin-left: 10px;
+        margin-left: 100px;
         font-size: 20px;
-        margin-top: -120px;
+        margin-top: -80px;
     }
     .work1-desc p{
-        width: 110%;
-        margin-left: -20px;
+        width: 100%;
+        margin-left: 0px;
     }
     .work1-comment-container{
-        margin-top: 10%;
-        margin-left: -20px;
+        margin-top: 15%;
+        margin-left: 0px;
+        width: 100%;
     }
     .work1-comment{
-        margin-left: -20px;
+        margin: 0px;
+        width: 95%;
+    }
+    .work2{
+        margin-top: 25%;
     }
 
     .work2 h2{
-        margin-left: 50px; 
+        margin-left: 100px; 
         font-size: 35px;
-        margin-top: 30%;
+        margin-top: 10%;
     }
     .work2 img{
-        width: 35vh;
-        height: 25vh;
-        margin-left: 20px;
+        width: 100%;
+        height: 40%;
+        margin-left: 0px;
         margin-top: -20px;
     }
     .work2-desc h2{
@@ -2119,72 +2304,121 @@ span{
     }
     .work2-desc p{
         width: 95%;
-        margin-left: 20px;
+        margin-left: -10px;
     }
     .work2-comment-container{
-        margin-top:10px;
-        margin-left: 10px;
+        margin-left: -10px;
+        width: 95%;
     }
-    .work1-comment{
-        margin-left: -0px;
-    }
+    .work2-comment{
+        margin-left: -10px;
+        margin-top: 15%;
 
+    }
+    .blog-main{
+        display: flex;
+        flex-direction: column;
+        overflow-y: hidden;
+        overflow-y: auto;
+        margin-left: 20px;
+        overflow-x: hidden;
+        width: 90%;
+        height: 550px;
+        padding: 0px;
+        
+    }
+    .nav-bar {
+        z-index: 2;
+
+    }
     .blog1{
-        margin-left: 120vh;
+        margin: 85vh 0px 0px 5px;
         transform: scale(.8);
+        z-index: 1;
     }
     .blog2{
         transform: scale(.8);
-        margin: 0px -50px;
+        margin: 0px 0px 0px 5px;
     }
     .blog3{
         transform: scale(.8);
+        margin: 0px 0px 0px 5px;
     }
     .blog form input{
          font-size: 15px;
+         margin: 0px;
+    }
+    .blog1:hover, .blog2:hover, .blog3:hover{
+        transform: scale(.9);
     }
     .blog form input[type="text"]{
         width: 250px;
         margin-left: -40px;
+        height: 45px;
         
     }
     .blog form input[type="submit"]{
         width: 70px;
+        height: 45px;
        
     }
     .contact-main{
         display: flex;
         flex-direction: column;
-        margin-top: 20%;
+        margin-top: 15%;
         height: auto;
-        width: 100%;
-        margin-left: 0px;
+        width: 95%;
+        margin-left: 10px;
     }
     .contact-label-image {
-        margin-top: 0px;
-        height: 500px;
+        margin: 0px;
+        height: 300px;
         width: 100%;
         border-radius: 50px 50px 0px 0px;
     }
     .contact-label-image .contact-image{
-        height: 70%;
+        height: 50%;
         width: 100%;
         border-radius:50px 50px 0px 0px;
     }
-    .contact-label-image img{
+    .contact-label-media{
+        border-radius: 0px;
+        height: 50%;
+    }
+    .contact-label-media h5{
+        margin-top: 15px;
+    }
+    .contact-label-image .contact-label-media img{
         border-radius: 20px;
+        margin: 15px 20px 0px 10px;
+        height: 30px;
+        width: 30px;
     }
     .contact-form{
+        height: auto;
         border-radius:0px 0px 50px 50px;
         width: 100%;
-        margin-top: 0px
+        margin: 0px
     }
     .contact-form h2{
         font-size: 40px;
+        margin-top: -20px;
+        font-size: 30px;
+        margin-left: -15px;
+        margin-bottom: -20px;
         
     }
+    .contact-form form .inputbox{
+        margin-left: -15px;
+        height: 50px;
+    }
+    
     #cont-submit{
-        margin-left: 100px;
+        margin-left: 120px;
+    }
+    .mediacontact-container{
+        margin-top: 20px;
+        margin-left: 30px;
     }
 
     .login-main{
@@ -2196,8 +2430,8 @@ span{
         margin-left: 0px;
     }
     .login-main img {
-        margin-top: 0px;
-        height: 300px;
+        margin-top: -10px;
+        height: 250px;
         width: 95%;
         border-radius: 50px 50px 0px 0px;
     }
@@ -2231,21 +2465,21 @@ span{
     .register-main{
         display: flex;
         flex-direction: column;
-        margin-top: 20%;
+        margin-top: 15%;
         height: auto;
         width: 100%;
         margin-left: 0px;
     }
     .register-main img {
         margin-top: 0px;
-        height: 300px;
+        height: 200px;
         width: 95%;
         border-radius: 50px 50px 0px 0px;
     }
     .register-form{
         border-radius:0px 0px 50px 50px;
         width: 95%;
-        height: 95%;
+        height: 80%;
         margin-top: 0px
     }
     .register-form h2{
@@ -2266,7 +2500,7 @@ span{
         height: 40px;
     }
     .bottomask{
-        margin-bottom: 50px;
+        margin-bottom: 20px;
         margin-left: 50px;
     }
     .bottomask h5{
@@ -2277,5 +2511,77 @@ span{
     }
     #forget-send{
         margin-left: 50px;
+    }
+    #loginf-main{
+        margin-top: 50%;
+    }
+    .nav-bar {
+        width: 50%;
+        height: 50vh;
+
+    }
+
+}
+@media only screen and (max-width:414px){
+    .main img{
+        height: 40vh;
+    }
+    .blog1, .blog2, .blog3{
+        transform: scale(.73);
+    }
+    
+    .blog form {
+        margin-top: 40px;
+        width: 40vh;
+    }
+    .blog form input[type="text"]{
+        height: 30px;
+        width: 200px;
+    }
+    .blog form input[type="submit"]{
+        height: 30px;
+        width: 70px;
+    }
+    .work1 img{
+        width: 100%;
+        height: 55%;
+        margin-left: -10px;
+        margin-top: -20px;
+    }
+    .work1-desc h2{
+        margin-left: 40px;
+        font-size: 20px;
+        margin-top: -80px;
+    }
+    .work1-comment-container{
+        margin-top: 40%;
+        
+    }
+    .work1-comment{
+        margin: 0px;
+        width: 95%;
+    }
+    .work2 img{
+        width: 100%;
+        height: 40%;
+        margin-left: 10px;
+        margin-top: 0px;
+    }
+    .work2 h2{
+        margin-top: 40%;
+    }
+    .work2-desc h2{
+        margin-left: 80px;
+        font-size: 20px;
+        margin-top: -100%;
+    }
+    .work2-comment-container{
+        margin-top: -20%;
+        
+    }
+    .work2-comment{
+        margin-top: -10px;
+        margin-bottom: 10%;
+        width: 95%;
     }
 }
