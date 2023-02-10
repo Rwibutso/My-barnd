@@ -1,5 +1,5 @@
-let lines = document.querySelector(".lines");
-lines.onclick = function() {
-   let navBar = document.querySelector(".nav-bar");
-    navBar.classList.toggle("open");
-}
+$(document).ready(function(){
+    $('.lines').click(function(){
+        $('.nav-bar').toggleClass('show');
+    });
+});
