@@ -1,0 +1,96 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="admin.css">
+
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="header-prfl">
+                <div class="prfl-back"><img src="../images/serge.png" alt=""></div>
+                <span>Rwibutso Serge</span>
+            </div>
+            <span class="header-right">/ My Work</span>
+
+        </div>
+        <div class="body">
+            <div class="side-bar">
+                <ul>
+                    <li><a href="Dashboard.html" >Dashboard/profile</a></li>
+                    <li><a href="#">controll Settings</a></li>
+                    <li><a href="about-me.html" >About Me</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="#" id="currentpage">My work</a></li>
+                    <li><a href="blogs.html">Blogs</a></li>
+                    <li><a href="media.html">Social Media</a></li>
+                    <li><a href="messages.html">Messages</a></li>
+                    <li><a href="#">Change password</a></li>
+                </ul>
+                <button>Logout</button>
+            </div>
+            <div class="main-bar">
+                <form action="#" class="work-form">
+                    <div class="work-upload">
+                        <img class="image" src="../images/work1.png">
+                        <button type="button" class="btn-worning">Upload File<input type="file"></button>
+                    </div>
+                    <div class="work-upload-desc">
+                        <div class="work-div1">
+                            <span class="span1">Tittle</span>
+                            <input type="text" placeholder="work name">
+                        </div>
+                        <div class="work-div2">
+                            <span class="span2">Description</span>
+                            <input type="text" placeholder=" Description">
+                        </div>
+                    
+                        <div class="work-div3">
+                            <button class="span1">Save</button>
+                            <button class="span2">Cancel</button>
+                        </div>
+                    </div>
+                </form>
+                <div class="dash-work1">
+                    <div class="work1-img"><img src="../images/work1.png" alt=""></div>
+                    <div class="work1-desc">
+                        <h3>Developer & Designer</h3>
+                        <h5>I design beautiful websites and mobile app that modern trends demand in UI/Ux Design
+                             and I create websites that help organization address bussiness challenges and meet 
+                             thier needs. My expertise lies within front-end web apps and main languages in my 
+                             tech stack are javaScript, React, and of course HTML/CSS and django and nodeJs for back-end. 
+                             I’m lifelong learner (currently taking trainnings at Andela in JavaScript, HTML/CSS) 
+                             and i love to read, ride bike and play video games.</h5>
+                    </div>
+                    <div class="work1-btn">
+                        <button class="w1-btn1">Update</button>
+                        <button class="w1-btn2">Delete</button>
+                    </div>
+                </div>
+                <div class="dash-work2">
+                    <div class="work2-img"><img src="../images/work2.png" alt=""></div>
+                    <div class="work2-desc">
+                        <h3>Developer & Designer</h3>
+                        <h5>I design beautiful websites and mobile app that modern trends demand in UI/Ux Design
+                             and I create websites that help organization address bussiness challenges and meet 
+                             thier needs. My expertise lies within front-end web apps and main languages in my 
+                             tech stack are javaScript, React, and of course HTML/CSS and django and nodeJs for back-end. 
+                             I’m lifelong learner (currently taking trainnings at Andela in JavaScript, HTML/CSS) 
+                             and i love to read, ride bike and play video games.</h5>
+                    </div>
+                    <div class="work2-btn">
+                        <button class="w2-btn1">Update</button>
+                        <button class="w2-btn2">Delete</button>
+                    </div>
+                </div>
+                <div class="work-add"  id="work-add-btn">Add new work</div>
+            </div>
+        </div>
+    </div> 
+    <script src="js/work.js"></script>
+</body>
+</html>

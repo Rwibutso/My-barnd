@@ -1,0 +1,89 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="admin.css">
+
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="header-prfl">
+                <div class="prfl-back"><img src="../images/serge.png" alt=""></div>
+                <span>Rwibutso Serge</span>
+            </div>
+            <span class="header-right">/ Media</span>
+
+        </div>
+        <div class="body">
+            <div class="side-bar">
+                <ul>
+                    <li><a href="Dashboard.html" >Dashboard/profile</a></li>
+                    <li><a href="#">controll Settings</a></li>
+                    <li><a href="about-me.html" >About Me</a></li>
+                    <li><a href="skills.html" >Skills</a></li>
+                    <li><a href="my-work.html">My work</a></li>
+                    <li><a href="blogs.html">Blogs</a></li>
+                    <li><a href="#"id="currentpage">Social Media</a></li>
+                    <li><a href="messages.html">Messages</a></li>
+                    <li><a href="#">Change password</a></li>
+                </ul>
+                <button>Logout</button>
+            </div>
+            <div class="main-bar">
+                <form action="#" class="media-form">
+                    <div class="media-upload">
+                        <img class="image" src="../images/index.jpeg">
+                        <button type="button" class="btn-worning">Upload media icon<input type="file"></button>
+                    </div>
+                    <div class="media-upload-desc">
+                        <div class="media-div1">
+                            <input type="text" placeholder="media name">
+                        </div>                    
+                        <div class="media-div3">
+                            <button class="span1">Save</button>
+                            <button class="span2">Cancel</button>
+                        </div>
+                    </div>
+                </form>
+                <div class="media-container">
+                    <div class="dash-media">
+                        <div class="media1">
+                            <div class="m1"><img src="../icons/watsapp.png" alt=""></div>
+                            <div class="m1-display"><h4>0780536126</h4></div>                                <input type="checkbox">
+                        </div>
+                        <div class="media2">
+                            <div class="m2"><img src="../icons/email.png" alt=""></div>
+                            <div class="m2-display"><h4>rwibuserge@gmail.com</h4></div>                                <input type="checkbox">
+                        </div>
+                        <div class="media3">
+                            <div class="m3"><img src="../icons/hub.png" alt=""></div>
+                            <div class="m3-display"><h4>https://github.com/Rwibutso</h4></div>
+                            <input type="checkbox">
+                        </div>
+                        <div class="media4">
+                            <div class="m4"><img src="../icons/logo-ig-png-instagram-logo-camel-productions-website-25.png" alt=""></div>
+                            <div class="m4-display"><h4>rwibuserge</h4></div>
+                            <input type="checkbox">
+                        </div>
+                        <div class="media5">
+                            <div class="m5"><img src="../icons/din.png" alt=""></div>
+                            <div class="m5-display"><h4>https://www.linkedin.com/in/rwibutso-serge-4444211b8/ </h4></div>
+                            <input type="checkbox">
+                        </div>
+                    </div>
+                    <div class="media-skill-btn">
+                        <button class="mdia5-btn1">Update</button>
+                        <button class="mdia5-btn2">Delete</button>
+                    </div>
+                </div>
+                <div class="media-add" id="media-add-btn">Add media</div>
+            </div>
+        </div>
+    </div> 
+    <script src="js/medis.js"></script>
+</body>
+</html>

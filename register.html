@@ -5,18 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My brand</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://code.jquery.com/jquery-3.6.1.js"></script></script>
-    <script src="myscripts.js"></script>
 </head>
 <body>
         <div class="header">
           <div class="div-logo"><img src="images/serge.png" class="logo"></div>
-          <div class="lines">
+          <div class="lines" id="togglestatus">
             <div class="line"></div>
             <div class="line"></div>
             <div class="line"></div>
           </div>
-            <nav class="nav-bar">
+            <nav class="nav-bar" id="navBar">
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about-me.html">About Me</a></li>
@@ -38,29 +36,36 @@
                   </div>
                <h2>Sign up</h2>
                
-               <form method="post">
-                  
+               <form >
+                  <h6 id="errordisplayregister"></h6>
                   <div class="inputbox">
-                    <input type="text" name="" required="required" placeholder="example@gmail.com">
+                    <input type="text" name="" required="required" placeholder="first name" id="fname">
                   </div>
                   <div class="inputbox">
-                    <input type="password" name="" required="required" placeholder="password">
+                    <input type="text" name="" required="required" placeholder="last name" id="lname">
                   </div>
                   <div class="inputbox">
-                    <input type="password" name="" required="required" placeholder="confirm-password">
+                    <input type="email" name="" required="required" placeholder="example@gmail.com" id="useremail">
+                  </div>
+                  <div class="inputbox">
+                    <input type="password" name="" required="required" placeholder="password" id="password1">
+                  </div>
+                  <div class="inputbox">
+                    <input type="password" name="" required="required" placeholder="confirm-password" id="password2">
                   </div>
                  
                   <div class="inputbox">
-                    <input type="submit" name="" value="Send" id="register-send">
+                    <input type="submit" name="" value="Register" id="register-send">
                   </div>
                </form>
               <div class="bottomask">
-                <h5>Arleady have an Account?</h5>
+                <h5>Already have an Account?</h5>
                 <a href="login.html" class="link4">Login</a>
                </div>
 
             </div>
           </div>
         </div> 
+        <script src="js/myscripts.js"></script>
 </body>
 </html>

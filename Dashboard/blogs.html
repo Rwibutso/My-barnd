@@ -1,0 +1,108 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="header-prfl">
+                <div class="prfl-back"><img src="../images/serge.png" alt=""></div>
+                <span>Rwibutso Serge</span>
+            </div>
+            <span class="header-right">/ Blogs</span>
+
+        </div>
+        <div class="body">
+            <div class="side-bar">
+                <ul>
+                    <li><a href="Dashboard.html" >Dashboard/profile</a></li>
+                    <li><a href="#">controll Settings</a></li>
+                    <li><a href="about-me.html" >About Me</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="my-work.html" >My work</a></li>
+                    <li><a href="#" id="currentpage">Blogs</a></li>
+                    <li><a href="media.html">Social Media</a></li>
+                    <li><a href="messages.html">Messages</a></li>
+                    <li><a href="#">Change password</a></li>
+                </ul>
+                <button>Logout</button>
+            </div>
+            <div class="main-bar">
+                <form action="#" class="blog-form">
+                    <div class="blog-upload">
+                        <img class="image" src="../images/work1.png">
+                        <button type="button" class="btn-worning">Upload File<input type="file"></button>
+                    </div>
+                    <div class="blog-upload-desc">
+                        <div class="blog-div1">
+                            <span class="span1">Tittle</span>
+                            <input type="text" placeholder="blog name">
+                        </div>
+                        <div class="blog-div2">
+                            <span class="span2">Description</span>
+                            <input type="text" placeholder=" Description">
+                        </div>
+                        
+                        <div class="blog-div3">
+                            <button class="span1">Save</button>
+                            <button class="span2">Cancel</button>
+                        </div>
+                    </div>
+                </form>
+                <div class="blog-menu">
+                    <div class="dash-blog1">
+                        <div class="blog1-img">
+                            <h2>Serge</h2>
+                            <div><img src="../images/work1.png" alt=""></div>
+                        </div>
+                        <div class="blog1-desc">
+                            <h3>Developer & Designer</h3>
+                            <h5>This is the website i have working for three months as back-end developer.</h5>
+                        </div>
+                        <div class="blog1-btn">
+                            <button class="b1-btn1">Update</button>
+                            <button class="b1-btn2">Delete</button>
+                        </div>
+                    </div>
+                    <div class="dash-blog2">
+                        <div class="blog2-img">
+                            <h2>Jack</h2>
+                            <div><img src="../images/work1.png" alt=""></div>
+                        </div>
+                        <div class="blog2-desc">
+                            <h3>Developer & Designer</h3>
+                            <h5>This is the website i have working for three months as back-end developer.</h5>
+                        </div>
+                        <div class="blog2-btn">
+                            <button class="b2-btn1">Update</button>
+                            <button class="b2-btn2">Delete</button>
+                        </div>
+                    </div>
+                    <div class="dash-blog3">
+                        <div class="blog3-img">
+                            <h2>Gloria</h2>
+                            <div><img src="../images/work1.png" alt=""></div>
+                        </div>
+                        <div class="blog3-desc">
+                            <h3>Developer & Designer</h3>
+                            <h5>This is the website i have working for three months as back-end developer.</h5>
+                        </div>
+                        <div class="blog3-btn">
+                            <button class="b3-btn1">Update</button>
+                            <button class="b3-btn2">Delete</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="blog-add" id="blog-add-btn">Add new blog</div>
+            </div>
+        </div>
+    </div> 
+    <script src="js/blog.js"></script>
+</body>
+</html>
