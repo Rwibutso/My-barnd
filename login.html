@@ -5,18 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My brand</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://code.jquery.com/jquery-3.6.1.js"></script></script>
-    <script src="myscripts.js"></script>
 </head>
 <body>
         <div class="header">
           <div class="div-logo"><img src="images/serge.png" class="logo"></div>
-          <div class="lines">
+          <div class="lines" id="togglestatus">
             <div class="line"></div>
             <div class="line"></div>
             <div class="line"></div>
           </div>
-            <nav class="nav-bar">
+            <nav class="nav-bar" id="navBar">
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about-me.html">About Me</a></li>
@@ -35,25 +33,27 @@
                 <div class="loginregister">
                     <a href="#" class="link1">Login</a>
                     <a href="register.html" class="link2">Register</a>
-                  </div>
+                </div>
                <h2>Sign in</h2>
                <h5>sign in to continue to our application</h5>
-               <form method="post">
-                  
+               <form>
+                  <h6 id="errordisplay"></h6>
                   <div class="inputbox">
-                    <input type="text" name="" required="required" placeholder="example@gmail.com">
+                    <input type="email" name="" required="required" placeholder="example@gmail.com" id="useremail">
                   </div>
+                 
                   <div class="inputbox">
-                    <input type="password" name="" required="required" placeholder="password">
+                    <input type="password" name="" required="required" placeholder="password" id="userpassword">
                   </div>
                   <a href="forgotpass.html" class="passforgot">forgot password?</a>
                  
                   <div class="inputbox">
-                    <input type="submit" name="" value="Send" id="login-send">
+                    <input type="submit" name="" value="Log in" id="login-send">
                   </div>
                </form>
             </div>
           </div>
         </div> 
+        <script src="js/myscripts.js"></script>
 </body>
 </html>

@@ -1,0 +1,70 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="admin.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="header-prfl">
+                <div class="prfl-back"><img src="../images/serge.png" alt=""></div>
+                <span>Rwibutso Serge</span>
+            </div>
+            <span class="header-right">/ Skills</span>
+
+        </div>
+        <div class="body">
+            <div class="side-bar">
+                <ul>
+                    <li><a href="Dashboard.html">Dashboard/profile</a></li>
+                    <li><a href="#">controll Settings</a></li>
+                    <li><a href="about-me.html">About Me</a></li>
+                    <li><a href="#" id="currentpage">Skills</a></li>
+                    <li><a href="my-work.html">My work</a></li>
+                    <li><a href="blogs.html">Blogs</a></li>
+                    <li><a href="media.html">Social Media</a></li>
+                    <li><a href="messages.html">Messages</a></li>
+                    <li><a href="#">Change password</a></li>
+                </ul>
+                <button>Logout</button>
+            </div>
+            <div class="main-bar">
+                <form action="#" class="skill-form">
+                    <div class="skill-upload-desc">
+                        <div class="skill-div1">
+                            <input type="text" placeholder="skill name" id="skillNew">
+                        </div>
+                        <div class="skill-div3">
+                            <button class="span1" id="skillSave">Save</button>
+                            <button class="span2">Cancel</button>
+                        </div>
+                    </div>
+                </form>
+                <div class="skill-container">
+                    <div class="dash-skill" id="">
+                        <div class="skill1" id="">
+                            <span id="skill_span_save">HTML</span>
+                            <input type="checkbox">
+                        </div>
+
+                    </div>
+                    <div class="dash-skill-btn">
+                        <button class="s-btn1">Update</button>
+                        <button class="s-btn2" id="skill_delete_input">Delete</button>
+                    </div>
+                </div>
+                <div class="skill-add" id="skill-add-btn">Add new skill</div>
+            </div>
+        </div>
+    </div>
+    <script src="js/skill.js"></script>
+</body>
+
+</html>
