@@ -19,6 +19,8 @@ const address = document.getElementById("useraddress");
 let dasharr = [];
 let dashObj = {}; 
 
+
+
 document.getElementById("dashSave").addEventListener("click", function(e){
     e.preventDefault();
     
@@ -76,3 +78,14 @@ document.getElementById("dashSave").addEventListener("click", function(e){
       }
 
 })
+
+// logout the user
+
+const logoutBtn = document.getElementById("logout");
+
+logoutBtn.addEventListener("click", () => {
+  localStorage.removeItem("myToken");
+  window.location.href = "../index.html";
+
+  console.log("logged out successfully");
+});
