@@ -16,13 +16,68 @@ document.getElementById("togglestatus").addEventListener("click", function(e){
 //LOGIN FORM VLIDATION
 
 const errordisplay = document.getElementById("errordisplay");
+let loginObj = {};
+let userToken = [];
+
+
+// login function
+
+async function logUser(url, data) {
+  try {
+    const response = await fetch(url, {
+      method: "POST",
+      mode: "cors",
+      cache: "no-cache",
+      credentials: "same-origin",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      redirect: "follow",
+      referrerPolicy: "no-referrer",
+      body: JSON.stringify(data),
+    });
+    return response.json();
+  } catch (error) {
+    console.log("error generated", error);
+  }
+}
+
+// async function logUser(url, data) {
+//   try {
+//     const response = await fetch(url, {
+//       method: "POST",
+//       headers: {
+//         "Content-Type": "application/json",
+//       },
+//       body: JSON.stringify(data),
+//     });
+//     if (!response.ok) {
+//       throw new Error("Network response was not ok");
+//     }
+//     const jsonData = await response.json();
+//     if (jsonData.error) {
+//       errordisplay.innerHTML = "Error Password or Username";
+//       errordisplay.style.color = "red";
+
+//     } else {
+//       errordisplay.innerHTML ="login sucessfully";
+//       errordisplay.style.color = "green";
+//       window.open("/Dashboard/Dashboard.html");
+//     }
+//   } catch (error) {
+//     console.log("error generated", error);
+//     errordisplay.innerHTML ="username or password is invalid";
+//     errordisplay.style.color = "red";
+
+//   }
+// }
 
 //username validation
 
 function validateEmail() {
   let userEmail = document.getElementById("useremail").value;
   if (userEmail.length == 0) {
-    errordisplay.innerHTML = "Invalid login, please try again";
+    errordisplay.innerHTML = "No email entered!";
     errordisplay.style.color = "red"
     return false;
   }
@@ -31,9 +86,6 @@ function validateEmail() {
     errordisplay.style.color = "red"
     return false;
   }
-  errordisplay.style.color = "seagreen";
-  errordisplay.innerHTML = "Correct!";
-  return true;
 }
 
 //password validation
@@ -41,35 +93,57 @@ function validateEmail() {
 function validatePassword() {
   let userpassword = document.getElementById("userpassword").value;
   if (userpassword.length == 0) {
-    errordisplay.innerHTML = "Invalid login, please try again!";
+    errordisplay.innerHTML = "No password entered!";
     errordisplay.style.color = "red"
     return false;
   }
-  userpassword.innerHTML = "";
-  return true;
 }
+
+
+
+
 document.getElementById("login-send").addEventListener("click", function (e) {
   e.preventDefault();
-  let userEmail = document.getElementById("useremail").value;
-  let userpassword = document.getElementById("userpassword").value;
-  if (userEmail === "" && userpassword === "") {
-    validateEmail();
-    validatePassword();
-  } else if (userEmail == "admin@gmail.com" && userpassword == "serge2023") {
-    window.location.href = "/Dashboard/Dashboard.html";
-  } else if (userEmail != "admin@gmail.com" || userpassword == "serge2023") {
-    errordisplay.innerHTML = "Incorrect email, Please Try again!";
-    errordisplay.style.color = "red"
-  } else if (userEmail == "admin@gmail.com" || userpassword != "serge2023") {
-    errordisplay.innerHTML = "Incorrect password, Please Try again!";
-    errordisplay.style.color = "red";
-  } else if (userEmail != "admin@gmail.com" || userpassword != "serge2023") {
-    errordisplay.innerHTML = "Invalid login, please try again";
-    errordisplay.style.color = "red"
+  let email = document.getElementById("useremail").value;
+  let pass = document.getElementById("userpassword").value;
+  loginObj = {
+    email: email,
+    password: pass,
+  };
 
-  }
-  document.getElementById("useremail").value = "";
-  document.getElementById("userpassword").value = "";
+  logUser(
+    "https://my-brand-backend-serge.onrender.com/api/user-login",
+    loginObj
+  )
+    .then((data) => {
+      Alloweduser(data);
+    })
+    .catch((error) => console.log(error));
+
+
+    function Alloweduser(token) {
+      if (token === "email or password does not exist" || token === "") {
+        errordisplay.innerHTML = token;
+      } else if (email === "" || pass === "") {
+        validatePassword();
+        validateEmail();
+      } else if (token.length <= 80) {
+        errordisplay.innerHTML ="username or password is invalid";
+        errordisplay.style.color = "red";
+      } else {
+        const myToken = {
+          token: token,
+          isLoggedin: true,
+        };
+        console.log(myToken);
+        userToken.push(token);
+        window.localStorage.setItem("myToken", JSON.stringify(myToken));
+        document.getElementById("useremail").value = "";
+        document.getElementById("userpassword").value = "";
+        window.location.href = "/Dashboard/Dashboard.html";
+      }
+    }
+  
 });
 
 

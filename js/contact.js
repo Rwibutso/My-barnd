@@ -1,3 +1,18 @@
+let checkstatus = 1
+document.getElementById("togglestatus").addEventListener("click", function(e){
+  e.preventDefault();
+  if(checkstatus == 0){
+    document.getElementById("navBar").style.right = "-100%";
+    checkstatus = 1;
+  }else{
+    document.getElementById("navBar").style.right = "30px";
+    checkstatus = 0;
+  }
+});
+
+
+
+
 const fname = document.getElementById("frstname");
 const lname = document.getElementById("lstname");
 const email = document.getElementById("useremail");
@@ -6,6 +21,28 @@ const listMessage = document.getElementById("List of message");
 let Messageobj = {};
 let MessageArr = [];
 
+
+// function to create a message
+
+async function postMessage(url, data) {
+  try {
+    const response = await fetch(url, {
+      method: "POST",
+      mode: "cors",
+      cache: "no-cache",
+      credentials: "same-origin",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      redirect: "follow",
+      referrerPolicy: "no-referrer",
+      body: JSON.stringify(data),
+    });
+    return response.json();
+  } catch (error) {
+    console.log("error generated", error);
+  }
+}
 
 document.getElementById("contactSend").addEventListener("click", function (e) {
     e.preventDefault();
@@ -31,17 +68,25 @@ document.getElementById("contactSend").addEventListener("click", function (e) {
       errorcontact.style.color = "red";
     } else {
       Messageobj = {
-        fname: fname.value,
-        lname: lname.value,
+        firstname: fname.value,
+        lastname: lname.value,
         email: email.value,
         message: message.value,
       };
-      MessageArr.push(Messageobj);
-      window.localStorage.setItem(`Message`, JSON.stringify(MessageArr));
+      console.log(Messageobj);
+
+      postMessage(
+        "https://my-brand-backend-serge.onrender.com/api/add-messages",
+        Messageobj
+      ).catch((err) => console.log(err.message));
+
+      // MessageArr.push(Messageobj);
+      // window.localStorage.setItem(`Message`, JSON.stringify(MessageArr));
   
       fname.value = "";
       lname.value = "";
       email.value = "";
       message.value = "";
+      return true;
     }
   });

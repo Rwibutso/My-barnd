@@ -9,8 +9,9 @@ let signupObj = {};
 let signupArr = [];
 
 
+// function to create a user
 
-async function postData(url, data) {
+async function postUser(url, data) {
   try {
     const response = await fetch(url, {
       method: "POST",
@@ -28,6 +29,23 @@ async function postData(url, data) {
   } catch (error) {
     console.log("error generated", error);
   }
+}
+
+// name validation
+function ValidateNames() {
+  let firstname = document.getElementById("fname").value;
+  let lastname = document.getElementById("lname").value;
+
+
+  if (firstname.length == 0 && lastname.length == 0) {
+    errordisplayregister.style.color = "red";
+    errordisplayregister.innerHTML = "Fill all your names";
+    return false;
+  }
+  
+  errordisplayregister.style.color = "green";
+  errordisplayregister.innerHTML = "user registered!";
+  return true;
 }
 
 //email validation
@@ -80,23 +98,27 @@ function ValidatePassword() {
 }
 
 document.getElementById("register-send").addEventListener("click", async function (e) {
+    e.preventDefault();
     let fname, lname, email, password;
-    fname = document.getElementById("fname").value;
-    lname = document.getElementById("fname").value;
-    email = document.getElementById("useremail").value;
-    password = document.getElementById("password1").value;
+    fname = document.getElementById("fname");
+    lname = document.getElementById("lname");
+    email = document.getElementById("useremail");
+    password = document.getElementById("password1");
     const formData = new FormData();
 
 
-
-    let userEmail = email.value;
+    let Fname = fname.value;
+    let Lname = lname.value;
+    let Email = email.value;
     let P1 = password1.value;
     let P2 = password2.value;
     let passa = P1;
     let passb = P2;
   
     if (
-      userEmail.length == 0 &&
+      Fname.length == 0 &&
+      Lname.length == 0 &&
+      Email.length == 0 &&
       P1.length == 0 &&
       P2.length == 0
     ) {
@@ -108,36 +130,26 @@ document.getElementById("register-send").addEventListener("click", async functio
       errordisplayregister.style.color = "red";
       return false;
     }
-    else if (!ValidatePassword() || !validateEmail()) {
+    else if (!ValidatePassword() || !validateEmail() || !ValidateNames()) {
       return false;
     } else if (passa !== passb) {
       errordisplayregister.innerHTML = "password not match";
       errordisplayregister.style.color = "red";
       return false;
     } else if (passa === passb) {
-      // Check if the email is already registered
-      let existingUser = signupArr.find(user => user.userEmail === userEmail);
-      if (existingUser) {
-        errordisplayregister.innerHTML = "Email already registered";
-        errordisplayregister.style.color = "red";
-        return false;
-      } else {
-        signupObj = {
-          firstname: `${fname}`,
-          lastname: `${lname}`,
-          email: `${email}`,
-          password: `${password}`,
-        };
+      signupObj = {
+        firstname: fname.value,
+        lastname: lname.value,
+        email: email.value,
+        password: password.value,
+      };
       // signupArr.push(signupObj);
       // window.localStorage.setItem("Clients", JSON.stringify(signupArr));
-      postData(
+      postUser(
         "https://my-brand-backend-serge.onrender.com/api/user-register",
         signupObj
-      )
-        .then((data) => registerResult(data))
-        .catch((err) => console.log(err.message));
+      ).catch((err) => console.log(err.message));
 
-    
       // signupArr.push(signupObj);
       // window.localStorage.setItem("users", JSON.stringify(signupArr));
 
@@ -148,54 +160,6 @@ document.getElementById("register-send").addEventListener("click", async functio
       document.getElementById("password2").value = "";
       return true;
       }
-    }
-
-
-  });
-
-
-// document.getElementById("register-send").addEventListener("click", function (e) {
-//   let userEmail = email.value;
-//   let P1 = password1.value;
-//   let P2 = password2.value;
-//   let passa = P1;
-//   let passb = P2;
-
-//   if (
-//     userEmail.length == 0 &&
-//     P1.length == 0 &&
-//     P2.length == 0
-//   ) {
-//     errordisplayregister.innerHTML = "Fill all the fields first!";
-//     errordisplayregister.style.color = "red";
-    
-//   } else if (passb.length == 0) {
-//     errordisplayregister.innerHTML = "Confirm password";
-//     errordisplayregister.style.color = "red";
-//     return false;
-//   }
-//   else if (!ValidatePassword() || !validateEmail()) {
-//     return false;
-//   } else if (passa !== passb) {
-//     errordisplayregister.innerHTML = "password not match";
-//     errordisplayregister.style.color = "red";
-//     return false;
-//   } else if (passa === passb) {
-//     signupObj = {
-//       userEmail: email.value,
-//       P1: password1.value,
-//       P2: password2.value,
-//     };
-//     signupArr.push(signupObj);
-//     window.localStorage.setItem("users", JSON.stringify(signupArr));
-//     document.getElementById("useremail").value = "";
-//     document.getElementById("password1").value = "";
-//     document.getElementById("password2").value = "";
-//     window.location.href = "login.html";
-//     return true;
-//   }
-// });
-
-
-
+  }
+);
 
